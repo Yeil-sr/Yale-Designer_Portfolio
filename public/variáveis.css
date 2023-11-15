@@ -1,0 +1,17 @@
+:root{
+    --azulclaro:rgb(31, 157, 230);
+    --azulescuro:rgb(0, 81, 255);
+    --fontprincipal: Aleo;
+    --fontsecundaria:Montserrat;
+    --fontxxl: 28pt;
+    --fontxl: 24pt;
+    --fontxl2: 18pt;
+    --fontlg: 16pt;
+    --fontlg2: 14pt;
+    --fontmd: 12pt;
+    --fontsm: 6pt;
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+}

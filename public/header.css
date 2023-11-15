@@ -1,0 +1,12 @@
+header{
+    grid-area: c;
+    margin-right: 10px;
+}
+
+header img{
+    pointer-events: none;
+
+    width: 100%;
+    background-size: cover;
+    height: 715px;
+}

@@ -1,0 +1,66 @@
+
+/* Div5 - Contato */
+
+#div5{
+    grid-area: e;
+    background-image: linear-gradient(0deg, rgba(245, 196, 0, 1) 100%, rgba(255, 210, 28, 1) 60%, rgba(255, 205, 3, 1) 80%, rgba(255, 204, 0, 1) 100%); 
+    margin-right: 10px;
+    display: block;
+    padding: 10px;
+}
+
+#entre{
+    font-size:34pt;
+    margin: 0px;
+    font-family: var(--fontsecundaria);
+    position: absolute;
+    padding-left: 15px;
+    color: #0a0a0a;
+}
+
+#contato{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding-left: 15px;
+    font-size:44pt;
+    font-family: Arial, bold;
+    position: relative;
+    color: #0a0a0a;
+}
+
+.py2{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    align-items: center;
+    padding-left: 50px;
+    margin: 25px 0px;
+}
+
+.py2 a{
+    font-size: 24pt !important;
+    margin: 0px 0px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #141414;
+    font-family: var(--fontprincipal);
+}
+
+.py2 img{
+    width: 36px;
+}
+
+footer{
+    grid-area: r;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-right: 10px;
+    color: whitesmoke;
+    font-family: var(--fontsecundaria);
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}

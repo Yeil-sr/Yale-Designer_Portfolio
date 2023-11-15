@@ -1,0 +1,92 @@
+/* Div1 - Serviços */
+
+#div1{
+    grid-area: i;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom,  rgb(181, 213, 250),rgb(181, 213, 250,0.8), rgb(31, 157, 230, 0.7) ,rgb(31, 157, 230, 1) ,rgb(181, 213, 250, 0.9),rgb(181, 213, 250, 0.8));
+    border-radius: 0px;
+    margin-right: 10px !important;
+    align-items: center;
+}
+
+#div1 ,span{
+   text-align: center;
+   font-size: 24pt;
+   margin: 0px;
+   padding-top: 50px;
+   font-family: Aleo;
+}
+
+#div1 h2{
+    font-size: 46pt;
+    margin: 0px 0px 70px 0px ;
+    font-family: var(--fontsecundaria);
+    color: #212121;
+}
+
+#space2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+}
+
+.s {
+    text-align: center;
+    font-size: 18pt;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: var(--fontsecundaria);
+}
+
+ .s span img{
+
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    height:40%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow:0px 10px 20px 5px rgba(50, 50, 50, 0.5);    
+}
+
+.s span img:hover{
+    transform: scale(1.1);
+
+}
+
+.s1 span img{
+    background-color: 	rgb(176, 231, 253);
+    
+}
+
+.s2 span img{
+    background-color: rgb(255, 235, 148);
+}
+
+.s3 span img{
+    background-color:#DC143C;
+}
+
+.s4 span img{
+    background-color: rgba(252, 252, 252, 0.884);
+}
+
+.s{
+    height: 400px;
+    margin: 0px;
+    padding: 5px;
+    font-size:14pt ;
+    flex: 0 0 220px !important;
+    flex-wrap: wrap;
+    
+}
+
+article{
+    font-size: 12pt;
+    text-align: left;
+    font-family: var(--fontsecundaria);
+    font-weight: bold;
+    overflow: hidden;
+}
