@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node index.js",
-    "build": "npm install && npm run build-site",
-    "build-site": "mkdir -p public/build && cp -R public/* public/build/"
+    "build": "npm install && npm run build-site"
   },
   "dependencies": {
     "body-parse": "^0.1.0",

@@ -1,5 +1,9 @@
-- name: Yale Designer
-  buildCommand: npm run build
-  startCommand: npm start
-  useDocker: false
-  env: node
+services:
+  - name: web
+    buildCommand: npm run build
+    startCommand: npm start
+    environment:
+      - PORT: 3000
+    healthCheckPath: /
+
+buildCommand: npm install --legacy-peer-deps
