@@ -11,7 +11,7 @@ const public = path.join(__dirname, "public");
 app.use(express.static(public));
 app.use(bodyParser.urlencoded({ extended: true })); 
 
-app.get('https://yale-designer.onrender.com', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, "public/sites/index.html"));
 });
 
