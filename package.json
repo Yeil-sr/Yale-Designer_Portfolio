@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "npm install"
+    "build": "npm run build"
   },
   "dependencies": {
     "body-parse": "^0.1.0",
