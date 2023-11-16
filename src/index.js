@@ -12,9 +12,8 @@ app.use(express.static(public));
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "public/sites/index.html"));
+    res.sendFile(path.join(__dirname, "../public/sites/index.html"));
 });
-
 app.post('/envio', (req, res) => {
     const { nome, emailCliente, fone, celular, assunto, preferencia, mensagem } = req.body;
 
