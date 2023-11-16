@@ -12,7 +12,7 @@ app.use(express.static(public));
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, "sites/index.html"));
+    res.sendFile(path.join(__dirname, "public/sites/index.html"));
 });
 
 app.post('/envio', (req, res) => {
