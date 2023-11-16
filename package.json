@@ -2,8 +2,9 @@
   "name": "Dev_portfolio",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",
-    "build": "npm install && npm run build-site"
+    "start": "node src/index.js",
+    "build": "npm install && npm run build"
+    
   },
   "dependencies": {
     "body-parse": "^0.1.0",

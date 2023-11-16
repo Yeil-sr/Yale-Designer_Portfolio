@@ -7,3 +7,4 @@ services:
     healthCheckPath: /
 
 buildCommand: npm install --legacy-peer-deps
+publishDir: public
