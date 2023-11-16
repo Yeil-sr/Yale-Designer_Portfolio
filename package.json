@@ -2,8 +2,8 @@
   "name": "Dev_portfolio",
   "version": "1.0.0",
   "scripts": {
-    "start": "node src/index.js",
-    "build": "npm install"
+    "start": "node ./src/index.js",
+    "build": "npm install && npm run build"
     
   },
   "dependencies": {
