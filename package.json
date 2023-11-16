@@ -4,9 +4,10 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm install && npm run build-site",
-    "build-site": "npm run static"
+    "build-site": "mkdir -p public/build && cp -R public/* public/build/"
   },
   "dependencies": {
+    "body-parse": "^0.1.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",

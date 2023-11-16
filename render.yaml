@@ -1,2 +1,5 @@
-buildCommand: "npm run build"
-startCommand: "npm start"
+- name: Yale Designer
+  buildCommand: npm run build
+  startCommand: npm start
+  useDocker: false
+  env: node
