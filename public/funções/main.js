@@ -2,7 +2,7 @@ function slide3d() {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 
-  const imagens = ["public/img/load.gif", 'public/img/infantil.png', 'public/img/d27.png', 'public/img/h1.png', 'public/img/d11.png', 'public/design/gta1.png', 'public/img/otto.png', 'public/design/MaiDefinitive.png', 'public/img/lobo.png', 'public/design/my.png', 'public/design/un.png', 'public/design/fg.png', 'public/design/nago.png', "public/img/load.gif"];
+  const imagens = ["/img/load.gif", '/img/infantil.png', '/img/d27.png', '/img/h1.png', '/img/d11.png', '/design/gta1.png', '/img/otto.png', '/design/MaiDefinitive.png', '/img/lobo.png', '/design/my.png', '/design/un.png', '/design/fg.png', '/design/nago.png', "/img/load.gif"];
   
   let fotoClasses = ['foto1', 'foto2', 'foto3', 'foto4', 'foto5'];
 
