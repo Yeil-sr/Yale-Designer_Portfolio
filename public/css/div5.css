@@ -7,9 +7,11 @@
     margin-right: 10px;
     display: block;
     padding: 10px;
+ 
 }
 
 #entre{
+    display: block;
     font-size:34pt;
     margin: 0px;
     font-family: var(--fontsecundaria);

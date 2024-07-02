@@ -46,11 +46,7 @@ app.post('/envio', (req, res) => {
             rejectUnauthorized: false
         }
     });
-            
-    // Verificar se as variáveis de ambiente estão configuradas corretamente
-    console.log('SMTP Host:', process.env.SMTP_HOST);
-    console.log('SMTP Port:', process.env.SMTP_PORT);
-    console.log('SMTP User:', process.env.SMTP_USER);
+   
     transporter.verify(function(error, success) {
         if (error) {
             console.log(error);

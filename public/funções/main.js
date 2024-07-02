@@ -1,4 +1,4 @@
-function slide3d() {
+export function slide3d() {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 
