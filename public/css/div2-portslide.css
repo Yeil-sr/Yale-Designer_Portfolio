@@ -22,6 +22,8 @@
     box-shadow:0px 10px 20px 5px rgba(50, 50, 50, 0.5);
     transition: 0.5s linear;
     object-fit: fill;
+    cursor: pointer;
+
 }
 
 #p2 span img:hover{
@@ -46,8 +48,8 @@
 #space3{
     margin-left: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    align-items: center;
+    justify-content: space-between;;
 }
 
 nav {
@@ -115,6 +117,61 @@ nav a.active{
     cursor: pointer;
     
 
+}
+
+#titulo{
+    padding: 10px;
+    margin: 0px 0px 30px 0px;
+    font-size: 18pt;
+    font-family: var(--fontsecundaria);
+    color: rgb(24, 24, 24);
+
+}
+.ftProjeto{
+    cursor: pointer;
+    width: 100%;
+}
+#website > p{
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+.web{
+  display: inline-block;
+  margin: 0px;
+  width: 50%;
+  padding: 20px 30px;
+  height: 300px ;
+}
+
+.descdescrpitionroject{
+    font-family: var(--fontsecundaria);
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.listag{
+    display: inline-block;
+  margin: 0px;
+  width: 50%;
+  padding: 20px 30px;
+}
+.tag{
+    font-family: var(--fontsecundaria);
+    margin: 20px 5px;
+    padding: 5px ;
+    border-style: solid;
+    border-color: rgb(5, 108, 168);
+    border-radius: 5px;
+    border-width: 2px;
+    color: black;
+    cursor:default;
+}
+
+.tag:hover{
+    background-color: rgb(0, 81, 255);
+    border-color: rgb(0, 81, 255);
+    color: #eee;
 }
 
 /* SLIDE MODAL */

@@ -1,15 +1,5 @@
-/* DIV3 - Quem Sou */
+/* DIV3 - Quem Sou
 
-.div3{
-    display: flex;
-    grid-area: h;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0px;
-    flex-wrap: wrap;
-    background-image: url('/img/bg1.png');
-    margin-right: 10px;
-}
 
 .box{
     border-radius: 20px;
@@ -161,4 +151,4 @@ figcaption{
 .icb{
     display: none;
 }
-
+ */

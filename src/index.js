@@ -7,7 +7,6 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true })); 
-const public = path.join(__dirname, "public");
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.get('/', (req, res) => {

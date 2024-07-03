@@ -15,7 +15,6 @@
     font-size:34pt;
     margin: 0px;
     font-family: var(--fontsecundaria);
-    position: absolute;
     padding-left: 15px;
     color: #0a0a0a;
 }
@@ -31,27 +30,77 @@
 }
 
 .py2{
+    border: solid;
     display: flex;
     flex-direction: row;
     align-self: start;
     align-items: center;
     padding-left: 50px;
     margin: 25px 0px;
+    width: 50%;
+    border-width: 3px;
 }
 
 .py2 a{
     font-size: 24pt !important;
     margin: 0px 0px;
-    padding-left: 10px;
+    padding: 10px;
     text-decoration: none;
     color: #141414;
     font-family: var(--fontprincipal);
 }
 
-.py2 img{
-    width: 36px;
+.py2 > img{
+    border: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    width: 32px;
+
+    padding: 20px 10px;
+}
+ 
+#zap{
+    width: 32px;
 }
 
+.zap{
+    border: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    width: 10%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+
+}
+
+.pc1{
+    width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.pc2{
+    width: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.pc3{
+    width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.contato{
+    margin: 0px auto;
+}
 footer{
     grid-area: r;
     align-items: center;

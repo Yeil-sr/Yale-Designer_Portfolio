@@ -63,7 +63,7 @@ form{
     display: block;
     margin:0px auto;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-family: var(--fontprincipal);
     font-size: 44pt;
 
