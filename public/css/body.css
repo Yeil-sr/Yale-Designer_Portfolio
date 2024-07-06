@@ -8,7 +8,7 @@ body{
 
 main{
    display: grid;
-   background-image: url('/img/fundo.png') ; 
+   background-image: url('../img/fundo.png') ; 
    background-size: cover;
    background-repeat: no-repeat;
    grid-template-columns:  repeat(6, 1fr);   

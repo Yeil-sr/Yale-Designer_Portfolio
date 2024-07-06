@@ -1,6 +1,7 @@
-export function slide3d() {
+
+function slide3d() {
  
-  const imagens = ['/img/infantil.png', '/img/d27.png', '/img/h1.png', '/img/d11.png', '/design/gta1.png', '/img/otto.png', '/design/MaiDefinitive.png', '/img/lobo.png', '/design/my.png', '/design/un.png', '/design/fg.png', '/design/nago.png', "/img/load.gif"];
+  const imagens = ['./img/infantil.png', './img/d27.png', './img/h1.png', './img/d11.png', './design/gta1.png', './img/otto.png', './design/MaiDefinitive.png', './img/lobo.png', './design/my.png', './design/un.png', './design/fg.png', './design/nago.png', "./img/load.gif"];
   
   let fotoClasses = ['foto1', 'foto2', 'foto3', 'foto4', 'foto5'];
 
