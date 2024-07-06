@@ -1,8 +1,6 @@
 export function slide3d() {
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
-
-  const imagens = ["/img/load.gif", '/img/infantil.png', '/img/d27.png', '/img/h1.png', '/img/d11.png', '/design/gta1.png', '/img/otto.png', '/design/MaiDefinitive.png', '/img/lobo.png', '/design/my.png', '/design/un.png', '/design/fg.png', '/design/nago.png', "/img/load.gif"];
+ 
+  const imagens = ['/img/infantil.png', '/img/d27.png', '/img/h1.png', '/img/d11.png', '/design/gta1.png', '/img/otto.png', '/design/MaiDefinitive.png', '/img/lobo.png', '/design/my.png', '/design/un.png', '/design/fg.png', '/design/nago.png', "/img/load.gif"];
   
   let fotoClasses = ['foto1', 'foto2', 'foto3', 'foto4', 'foto5'];
 
@@ -88,16 +86,36 @@ export function slide3d() {
 
 window.addEventListener('load', slide3d);
 window.addEventListener('resize', slide3d);
-     //opera
-      const opBrowser = document.querySelector('.opBrowser')
-      opBrowser.addEventListener('click', () => {
-      const nave = document.querySelector('.nave');
-      nave.classList.toggle('active');
-  })
+
+   // Função para copiar texto para a área de transferência e exibir mensagem
+   function copyToClipboard(text, element) {
+    navigator.clipboard.writeText(text).then(function() {
+        const originalText = element.innerHTML;
+        element.innerHTML = "Link copiado";
+        setTimeout(function() {
+            element.innerHTML = originalText;
+        }, 2000);
+    }, function(err) {
+        console.error("Erro ao copiar o texto: ", err);
+    });
+}
+const emailBotao = document.getElementById('email');
+emailBotao.addEventListener('click', event =>{
+  const contact_email = document.querySelector('#contact-email')
+  contact_email.classList.toggle('active');
+})
+
+const contact_email = document.getElementById("contact-email");
+ contact_email.addEventListener("click", function(event) {
+    event.preventDefault();
+    copyToClipboard("yale.designers@gmail.com", this);
+});
 //menuMobile
    const btn = document.querySelector('.btn')
    btn.addEventListener('click', ()=> {
     const nave = document.querySelector('#menuL')
     menuL.classList.toggle('active');
+
+    
     
    })  

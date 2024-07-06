@@ -5,39 +5,20 @@
     grid-area: e;
     background-image: linear-gradient(0deg, rgba(245, 196, 0, 1) 100%, rgba(255, 210, 28, 1) 60%, rgba(255, 205, 3, 1) 80%, rgba(255, 204, 0, 1) 100%); 
     margin-right: 10px;
-    display: block;
+    display: flex;
+    align-items: center;
+  justify-content: space-evenly;;
     padding: 10px;
  
-}
-
-#entre{
-    display: block;
-    font-size:34pt;
-    margin: 0px;
-    font-family: var(--fontsecundaria);
-    padding-left: 15px;
-    color: #0a0a0a;
-}
-
-#contato{
-    margin-top: 40px;
-    margin-bottom: 70px;
-    padding-left: 15px;
-    font-size:44pt;
-    font-family: Arial, bold;
-    position: relative;
-    color: #0a0a0a;
 }
 
 .py2{
     border: solid;
     display: flex;
     flex-direction: row;
-    align-self: start;
     align-items: center;
     padding-left: 50px;
     margin: 25px 0px;
-    width: 50%;
     border-width: 3px;
 }
 
@@ -82,6 +63,8 @@
     width: 40%;
   display: flex;
   justify-content: center;
+  cursor:pointer;
+
 }
 
 
@@ -89,6 +72,7 @@
     width: 55%;
   display: flex;
   justify-content: center;
+  cursor:pointer;
 }
 
 
@@ -96,11 +80,28 @@
     width: 35%;
   display: flex;
   justify-content: center;
+  cursor:pointer;
+
 }
 
 .contato{
-    margin: 0px auto;
+    width: 500px;
 }
+
+
+.envio{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-image: url('../img/envio.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+
 footer{
     grid-area: r;
     align-items: center;
