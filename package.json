@@ -2,7 +2,7 @@
   "name": "Dev_portfolio",
   "version": "1.0.0",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "",
     "build": "npm install"
   },
   "dependencies": {

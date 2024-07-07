@@ -690,12 +690,12 @@ a {
 
   .apresentacao>h2 {
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
 
   .perfil {
     display: block;
-    margin: 250px auto;
+    margin: 150px auto  ;
     position: relative;
   }
 
@@ -899,20 +899,35 @@ a {
     flex-direction: column;
     height: 1000px;
   }
+  
 
+  .perfil {
+    display: block;
+    margin: 120px auto 150px auto ;
+    position: relative;
+  }
 
   #div2 {
-    height: 3950px;
+    height: 3650px;
+  }
+
+  #titulo {
+    margin-bottom: 180px;
+    text-align: center;
+  }
+
+  .descdescrpitionroject {
+    width: 100%;
   }
 
   .ftProjeto {
-    margin-top: 50px;
+    display: block;
+    margin: 30px auto;
+    position: relative;
   }
 
   .lisTag {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    display: none;
   }
 
   .tag {
@@ -923,7 +938,7 @@ a {
   }
 
   #website {
-    height: 1020px;
+    height: 600px;
   }
 
 #mais{
@@ -936,7 +951,7 @@ a {
 }
 
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 390px) {
   
   .ftProjeto{
     padding: 0px;
@@ -947,7 +962,7 @@ a {
     padding: 40px;
   }
   .lisTag{
-    display: flex;
+    display: none;
   }
 
   .contato{

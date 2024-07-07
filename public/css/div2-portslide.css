@@ -52,6 +52,18 @@
     justify-content: space-between;;
 }
 
+#space4{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -140,7 +152,7 @@ nav a.active{
 .web{
   display: inline-block;
   margin: 0px;
-  width: 50%;
+  width: 75%;
   padding: 20px 30px;
   height: 300px ;
 }
