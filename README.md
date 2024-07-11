@@ -4,7 +4,7 @@
 <h2>Olá, eu sou Yale</h2>
 <h4>Desenvolvedor e Web Designer</h4>
 <p>
-  formado em Análise e desenvolvimento de sistemas, como Programador de Sistemas. Sou apaixonado por combinar 
+  Sou apaixonado por combinar 
   habilidades técnicas com uma visão criativa,criando designs atraentes e experiências únicas. 
 </p>
 
