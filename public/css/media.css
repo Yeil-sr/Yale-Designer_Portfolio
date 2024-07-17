@@ -708,6 +708,7 @@ a {
 
   .apresentacao {
     position: absolute;
+    z-index: 0;
 
   }
 
@@ -834,6 +835,7 @@ a {
 
   #menuL.active {
     display: block !important;
+    
   }
 
   .py1 {

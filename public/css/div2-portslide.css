@@ -141,9 +141,7 @@ nav a.active{
 }
 .ftProjeto{
     cursor: pointer;
-    width: 100%;
-    height: auto;
-
+   width: 100%;
 }
 #website > p{
    margin-top: 50px;
