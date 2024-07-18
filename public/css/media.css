@@ -425,7 +425,7 @@ a {
   /* Celulares - Height: 400px */
   @media screen and (max-width: 992px) and (min-height:300px) {
     .mdpt {
-      grid-template-rows: 715px 600px 2750px 500px 60px;
+      grid-template-rows: 420px 600px 2750px 500px 60px;
     }
 
     header img {
@@ -680,7 +680,7 @@ a {
     margin-left: 10px !important;
   }
 
-  .div1 {
+  #div1 {
     display: flex;
     justify-content: center;
 
@@ -892,8 +892,7 @@ a {
 
 
 @media screen and (max-width: 445px) {
-
-  .div1 {
+  #div1 {
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -902,10 +901,9 @@ a {
     height: 1000px;
   }
   
-
   .perfil {
     display: block;
-    margin: 120px auto 150px auto ;
+    margin: 120px auto 150px auto;
     position: relative;
   }
 
@@ -943,36 +941,37 @@ a {
     height: 600px;
   }
 
-#mais{
-  display: block;
-  margin: 50px auto;
-}
-.mais{
-  display: block;
-  margin: 0px 125px;
-}
+  #mais {
+    display: block;
+    margin: 50px auto;
+  }
 
+  .mais {
+    display: block;
+    margin: 0px 125px;
+  }
+  .pc1, .pc2, .pc3 {
+    font-size: 14pt !important; /* Tamanho de fonte responsivo */
+  }
+}
 
 @media screen and (max-width: 390px) {
-  
-  .ftProjeto{
+  .ftProjeto {
     padding: 0px;
     margin-bottom: 0px;
   }
 
-  .apresentacao{
+  .apresentacao {
     padding: 40px;
   }
-  .lisTag{
+
+  .lisTag {
     display: none;
   }
 
-  .contato{
-    width: 80%;
+  .pc1, .pc2, .pc3 {
+    font-size: 12pt !important; /* Tamanho de fonte responsivo */
   }
-
-
-
 }
 
-}
+
