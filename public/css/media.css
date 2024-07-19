@@ -1145,10 +1145,32 @@ a {
     padding: 40px;
   }
 
+  #space3{
+    
+  }
+  #titulo {
+    margin-bottom: 200px;
+    text-align: center;
+  }
+
+  .descdescrpitionroject {
+    width: 100%;
+  }
+
+  .ftProjeto {
+    display: block;
+    margin: 30px ;
+    position: relative;
+  }
+
   .lisTag {
     display: none;
   }
 
+  .mais {
+    display: block;
+    margin: 0px auto;
+  }
   .pc1, .pc2, .pc3 {
     font-size: 12pt !important; /* Tamanho de fonte responsivo */
   }
