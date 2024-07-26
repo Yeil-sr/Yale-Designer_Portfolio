@@ -11,7 +11,7 @@
 
 }
 
-.apresentacao h2 {
+.sobreMim h2 {
   font-size: 32pt !important;
    font-family: var(--fontsecundaria);
    color: rgb(226, 226, 226) ;
@@ -29,7 +29,7 @@
   }
 
  
-.apresentacao p {
+.sobreMim p {
   font-size: 18pt ;
   margin: 0px 0px 30px 0px;
    font-family: var(--fontsecundaria);
@@ -37,7 +37,7 @@
   }
 
  
- .apresentacao{
+ .sobreMim{
   display: inline-block;
   margin: 0px;
   width: 50%;
