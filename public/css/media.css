@@ -1092,6 +1092,9 @@ a {
   .envio {
     display: none;
   }
+  #p2 span img {
+    width: 180px;
+  }
 }
 
 
@@ -1154,46 +1157,26 @@ a {
   .pc1, .pc2, .pc3 {
     font-size: 14pt !important; /* Tamanho de fonte responsivo */
   }
+  #p2 span img {
+    width: 180px;
+  }
 }
 
 @media screen and (max-width: 390px) {
-  .ftProjeto {
-    padding: 0px;
-    margin-bottom: 0px;
+
+  #div1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 900px;
   }
 
-  .apresentacao {
-    padding: 40px;
-  }
-
-  #space3{
-    
-  }
-  #titulo {
-    margin-bottom: 200px;
-    text-align: center;
-  }
-
-  .descdescrpitionroject {
+  .article{
     width: 100%;
   }
 
-  .ftProjeto {
-    display: block;
-    margin: 30px ;
-    position: relative;
-  }
-
-  .lisTag {
-    display: none;
-  }
-
-  .mais {
-    display: block;
-    margin: 0px auto;
-  }
-  .pc1, .pc2, .pc3 {
-    font-size: 12pt !important; /* Tamanho de fonte responsivo */
+  #p2 span img {
+    width: 180px !important;
   }
 }
 
