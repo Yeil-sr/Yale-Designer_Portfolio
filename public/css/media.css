@@ -741,10 +741,6 @@ a {
     margin-left: 10px !important;
   }
 
-
-
- 
-
   .apresentacao>h2 {
     position: relative;
     margin-bottom: 250px;
@@ -870,6 +866,232 @@ a {
     margin-left: 10px !important;
   }
 }
+@media screen and (max-width: 640px) {
+  .sm-scape {
+    display: block;
+  }
+
+  header,
+  .div1,
+  #div2,
+  .div3,
+  #div4,
+  #div5,
+  footer {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  #div1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 900px;
+  }
+
+  .article{
+    width: 100%;
+  }
+
+  .apresentacao>h2 {
+    position: relative;
+  }
+
+  .perfil {
+    display: block;
+    margin: 0px auto  ;
+  }
+
+  
+  .lisTag {
+    display: none;
+  }
+
+  .apresentacao {
+    position: absolute;
+    z-index: 0;
+
+  }
+
+  .apresentacao>p {
+    width: 100%;
+    text-align: left;
+  }
+
+  
+
+  .space2 {
+    display: block;
+  }
+
+  .a-smpt {
+    font-size: 16pt;
+  }
+
+  header img {
+    width: 100%;
+    background-size: cover;
+    height:
+      500px;
+  }
+
+
+  #div3 {
+    height: 400px;
+  }
+
+  #titulo {
+    margin-bottom: 150px;
+    text-align: center;
+  }
+
+  .descdescrpitionroject {
+    width: 100%;
+  }
+
+  .ftProjeto {
+    display: block;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  #website {
+
+    height: 720px;
+  }
+
+  #space1,
+  #space3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .mais {
+    padding: 5px 25px 5px 25px;
+    margin: 0px auto;
+    width: 100px;
+  }
+
+  #p2 img {
+    width: 50%;
+
+  }
+
+  #menuL.active {
+    top: 10vh;
+    padding-top: 70px;
+    position: fixed;
+    width: 100%;
+    right: 0px;
+    z-index: 1000;
+    height: calc(100vh - 10vh);
+    background-image: linear-gradient(170deg, rgba(2, 45, 218, 0.7) 10%, rgba(31, 157, 230, 1) 90%, rgba(6, 96, 254, 1) 100%);
+  }
+
+  .lateral #menuL {
+    display: none !important;
+  }
+
+
+  #lik,
+  #git,
+  #insta {
+    height: 40px;
+    width: 100% !important;
+  }
+
+  .py1 img {
+    width: 100% !important;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .py2 {
+    margin: 5px 0px !important;
+  }
+
+  .l1 {
+    width: 80%;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .lateral {
+    width: 100%;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lateral img {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  #menuL.active {
+    display: block !important;
+    
+  }
+
+  .py1 {
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+
+  .py1,
+  .m-a {
+    font-size: 10px;
+  }
+
+  .al {
+    font-size: 10pt;
+  }
+
+  .foto {
+    width: 350px;
+  }
+
+  .foto1 {
+    width: 300px;
+    height: 450px;
+
+  }
+
+  .contato,
+  h2 {
+    font-size: 24pt;
+  }
+
+  .zap {
+    padding: 5px;
+  }
+
+  .pc1 {
+    width: 50%;
+  }
+
+
+  .pc2 {
+    width: 70%;
+  }
+
+
+  .pc3 {
+    width: 45%;
+  }
+
+  .envio {
+    display: none;
+  }
+  #p2 span img {
+    width: 180px;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .sm-scape {
@@ -1169,6 +1391,10 @@ a {
     justify-content: center;
     flex-direction: column-reverse;
     height: 900px;
+  }
+
+  .sobreMim{
+    width: 80%;
   }
 
   .article{
