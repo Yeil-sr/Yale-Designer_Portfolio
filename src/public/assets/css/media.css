@@ -321,13 +321,13 @@ a {
   }
 
 
-  #projeto{
+  #projeto {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .lisTag{
+  .lisTag {
     display: flex;
     justify-content: center;
 
@@ -389,17 +389,18 @@ a {
     grid-template-rows: 715px 600px 4400px 500px 60px;
   }
 
-  .ftProjeto{
+  .ftProjeto {
     width: 250px;
   }
 
-  .ftProjeto1{
+  .ftProjeto1 {
     width: 250px;
   }
 
-#menuL {
-      display: block !important;
-    }
+  #menuL {
+    display: block !important;
+  }
+
   .space2 {
     justify-content: space-between;
   }
@@ -535,62 +536,65 @@ a {
 @media screen and (max-width: 950px) and (min-height:300px) {
 
 
-  .descdescrpitionroject{
+  .descdescrpitionroject {
     width: 100%;
     font-size: 10pt;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
   }
 
-  .lisTag{
+  .lisTag {
     width: 80%;
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 
   }
-  .tag{
+
+  .tag {
     font-size: 8pt;
   }
- 
-  .ftProjeto{
+
+  .ftProjeto {
     width: 200px;
   }
 
-  .ftProjeto1{
+  .ftProjeto1 {
     width: 200px;
   }
 
 
 
 }
+
 @media screen and (max-width: 827px) and (min-height:300px) {
   .mdpt {
     grid-template-rows: 415px 600px 4150px 500px 60px;
   }
 
-  .descdescrpitionroject{
+  .descdescrpitionroject {
     width: 100%;
     display: flex;
     font-size: 10pt;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
   }
 
-  .lisTag{
+  .lisTag {
     width: 80%;
-   display: flex;
-   justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 
   }
-  .tag{
+
+  .tag {
     font-size: 8pt;
   }
- 
-  .ftProjeto{
+
+  .ftProjeto {
     width: 200px;
   }
 
-  .ftProjeto1{
+  .ftProjeto1 {
     width: 200px;
   }
 
@@ -743,6 +747,7 @@ a {
     grid-template-rows: 420px 800px 2500px 500px 60px;
     display: block;
   }
+
   header,
   .div1,
   #div2,
@@ -766,7 +771,7 @@ a {
 
   .perfil {
     display: block;
-    margin: 150px auto  ;
+    margin: 150px auto;
     position: relative;
   }
 
@@ -783,7 +788,7 @@ a {
 
   #mais {
     display: block;
-  
+
   }
 
   .mais {
@@ -847,7 +852,7 @@ a {
 
   #menuL.active {
     display: block !important;
-    
+
   }
 
   .py1 {
@@ -878,12 +883,14 @@ a {
   .envio {
     display: none;
   }
+
   footer {
     display: block;
     margin-right: 10px !important;
     margin-left: 10px !important;
   }
 }
+
 @media screen and (max-width: 640px) {
   .sm-scape {
     display: block;
@@ -907,7 +914,7 @@ a {
     height: 900px;
   }
 
-  .article{
+  .article {
     width: 100%;
   }
 
@@ -921,10 +928,10 @@ a {
 
   .perfil {
     display: block;
-    margin: 0px auto  ;
+    margin: 0px auto;
   }
 
-  
+
   .lisTag {
     display: none;
   }
@@ -948,7 +955,7 @@ a {
     text-align: left;
   }
 
-  
+
 
   .space2 {
     display: block;
@@ -1070,7 +1077,7 @@ a {
 
   #menuL.active {
     display: block !important;
-    
+
   }
 
   .py1 {
@@ -1123,6 +1130,7 @@ a {
   .envio {
     display: none;
   }
+
   #p2 span img {
     width: 180px;
   }
@@ -1145,7 +1153,7 @@ a {
     margin-left: 10px !important;
   }
 
-  small{
+  small {
     display: flex;
     flex-direction: column;
     font-size: 8px;
@@ -1159,7 +1167,7 @@ a {
     height: 900px;
   }
 
-  .article{
+  .article {
     width: 100%;
   }
 
@@ -1179,8 +1187,8 @@ a {
 
   }
 
-  
-  
+
+
   .lisTag {
     display: none;
   }
@@ -1253,9 +1261,11 @@ a {
     display: flex;
     align-items: center;
   }
-  #website{
+
+  #website {
     height: 1900px !important;
   }
+
   .mais {
     padding: 5px 25px 5px 25px;
     margin: 0px auto;
@@ -1323,7 +1333,7 @@ a {
 
   #menuL.active {
     display: block !important;
-    
+
   }
 
   .py1 {
@@ -1376,6 +1386,7 @@ a {
   .envio {
     display: none;
   }
+
   #p2 span img {
     width: 180px;
   }
@@ -1392,15 +1403,15 @@ a {
     height: 700px;
   }
 
-  .sobreMim{
+  .sobreMim {
     width: 100%;
   }
 
-  #div2{
+  #div2 {
     height: 4850px !important;
   }
 
-  .article{
+  .article {
     width: 100%;
   }
 
@@ -1446,18 +1457,23 @@ a {
   }
 
   #mais {
-   display: flex;
-   align-items: center;
-   margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
   }
 
   .mais {
     display: block;
     margin: 0px 125px;
   }
-  .pc1, .pc2, .pc3 {
-    font-size: 14pt !important; /* Tamanho de fonte responsivo */
+
+  .pc1,
+  .pc2,
+  .pc3 {
+    font-size: 14pt !important;
+    /* Tamanho de fonte responsivo */
   }
+
   #p2 span img {
     width: 180px;
   }
@@ -1471,14 +1487,16 @@ a {
     flex-direction: column-reverse;
     height: 700px;
   }
- #div2{
-  height: 4850px !important;
- }
-  .sobreMim{
+
+  #div2 {
+    height: 4850px !important;
+  }
+
+  .sobreMim {
     width: 100%;
   }
 
-  .article{
+  .article {
     width: 100%;
   }
 
@@ -1486,5 +1504,3 @@ a {
     width: 180px !important;
   }
 }
-
-
