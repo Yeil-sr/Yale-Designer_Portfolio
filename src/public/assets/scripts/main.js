@@ -1,7 +1,7 @@
 
 function slide3d() {
  
-  const imagens = ['./img/infantil.png', './img/d27.png', './img/h1.png', './img/d11.png', './design/gta1.png', './img/otto.png', './design/MaiDefinitive.png', './img/lobo.png', './design/my.png', './design/un.png', './design/fg.png', './design/nago.png', "./img/load.gif"];
+  const imagens = ['/src/public/assets/img/1080x1080/infantil.png', '/src/public/assets/img/1080x1080/d27.png', '/src/public/assets/img/1080x1080/h1.png', '/src/public/assets/img/1080x1080/d11.png', '/src/public/assets/img/design/gta1.png', '/src/public/assets/img/1080x1080/otto.png', '/src/public/assets/img/design/MaiDefinitive.png', '/src/public/assets/img/1080x1080/lobo.png', '/src/public/assets/img/design/my.png', '/src/public/assets/img/design/un.png', '/src/public/assets/img/design/fg.png', '/src/public/assets/img/design/nago.png', "/src/public/assets/img/1080x1080/load.gif"];
   
   let fotoClasses = ['foto1', 'foto2', 'foto3', 'foto4', 'foto5'];
 
@@ -116,7 +116,5 @@ const contact_email = document.getElementById("contact-email");
    btn.addEventListener('click', ()=> {
     const nave = document.querySelector('#menuL')
     menuL.classList.toggle('active');
-
-    
     
    })  

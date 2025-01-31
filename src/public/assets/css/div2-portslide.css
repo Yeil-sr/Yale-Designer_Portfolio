@@ -140,12 +140,12 @@ nav a.active{
     color: rgb(24, 24, 24);
 
 }
-.ftProjeto{
+.ftProjeto, .ftProjeto1{
     cursor: pointer;
    width: 350px;
 }
 
-.apresentacao{
+.apresentacao, .apresentacao1{
     display: flex;
     justify-content: center;
     align-items: center;

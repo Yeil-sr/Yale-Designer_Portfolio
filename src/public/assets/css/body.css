@@ -8,11 +8,11 @@ body{
 
 main{
    display: grid;
-   background-image: url('../img/fundo.png') ; 
+   background-image: url('/src/public/assets/img/background/fundo.png') ; 
    background-size: cover;
    background-repeat: no-repeat;
    grid-template-columns:  repeat(6, 1fr);   
-   grid-template-rows: 715px 600px 2950px  500px 60px;
+   grid-template-rows: 715px 600px 3650px  500px 60px;
    overflow-x: hidden;  
    grid-template-areas:
 
