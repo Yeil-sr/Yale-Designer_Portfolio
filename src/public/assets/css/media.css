@@ -1469,13 +1469,13 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-    height: 900px;
+    height: 700px;
   }
  #div2{
-  height: 4200px !important;
+  height: 4850px !important;
  }
   .sobreMim{
-    width: 80%;
+    width: 100%;
   }
 
   .article{
