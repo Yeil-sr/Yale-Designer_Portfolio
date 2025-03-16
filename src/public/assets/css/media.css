@@ -1463,6 +1463,14 @@ a {
     height: 4950px !important;
   }
 
+  .web{
+    margin-bottom: 30px;
+  }
+
+  .descdescrpitionroject > p{
+    width: 100%;
+  }
+
   .sobreMim {
     width: 100%;
   }
