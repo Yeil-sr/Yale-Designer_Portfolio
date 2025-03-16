@@ -7,6 +7,29 @@
 */
 
 /* Telas grandes */
+
+@media screen and (min-width: 1920px) and (min-height: 1080px){
+  .xx-large {
+    grid-template-rows: 715px 600px 3750px 500px 60px !important;
+  }
+
+  #menuL{
+    margin-top: 50px !important;
+  }
+
+  #menuL > p{
+    margin-bottom: 30px ;
+  }
+
+  #div3{
+    justify-content: space-around;
+  }
+
+  #space1{
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1281px) and (min-height:768px) {
   .xx-large {
     grid-template-rows: 715px 600px 3650px 500px 60px;
@@ -567,7 +590,12 @@ a {
 
 @media screen and (max-width: 827px) and (min-height:300px) {
   .mdpt {
-    grid-template-rows: 415px 600px 4150px 500px 60px;
+    grid-template-rows: 415px 600px 3350px 500px 60px;
+  }
+
+  .apresentacao1 > a{
+    font-size: 10pt;
+    padding: 5px 0px;
   }
 
   .descdescrpitionroject {
@@ -918,6 +946,12 @@ a {
     width: 100%;
   }
 
+ 
+
+ .apresentacao1 > a{
+  display: none;
+ }
+
   .apresentacao>h2 {
     position: relative;
   }
@@ -981,6 +1015,8 @@ a {
     margin-bottom: 150px;
     text-align: center;
   }
+
+  
 
   .descdescrpitionroject {
     width: 100%;
@@ -1401,6 +1437,10 @@ a {
     flex-direction: column-reverse;
     padding: 20px;
     height: 700px;
+  }
+
+  header img{
+    height: 350px;
   }
 
   .sobreMim {
