@@ -788,12 +788,10 @@ a {
   }
 
   .ftProjeto>h2 {
-    position: relative;
     margin-bottom: 250px;
   }
 
   .apresentacao1>h2 {
-    position: relative;
     margin-bottom: 250px;
   }
 
@@ -942,12 +940,15 @@ a {
     height: 900px;
   }
 
+
+
   .article {
     width: 100%;
   }
 
   .web{
-    margin-top: 50px !;
+    margin-top: 50px;
+    margin-bottom: 80px;
   }
  
   #projeto > h4{
@@ -1023,7 +1024,7 @@ a {
 
   #website {
 
-    height: 2120px;
+    height: 2320px;
   }
 
   #space1,
@@ -1190,6 +1191,10 @@ a {
     height: 900px;
   }
 
+ #div2{
+  height: 5250px;
+ }
+
   .article {
     width: 100%;
   }
@@ -1231,18 +1236,7 @@ a {
   }
 
 
-  .ftProjeto {
-    display: block;
-    margin: 10px auto;
-    position: relative;
-  }
-
-  .ftProjeto1 {
-    display: block;
-    margin: 10px auto;
-    position: relative;
-  }
-
+ 
 
   #space1,
   #space3 {
@@ -1252,7 +1246,7 @@ a {
   }
 
   #website {
-    height: 2150px !important;
+    height: 2400px !important;
   }
 
   .mais {
@@ -1400,21 +1394,20 @@ a {
     width: 100%;
   }
 
-  #div2 {
-    height: 5100px !important ;
+  #div2{
+    height: 5600px !important;
   }
 
   .article {
     width: 100%;
   }
 
-  #div2 {
-    height: 5350px !important;
-  }
-
-  
   .web{
     margin-top: 100px ;
+  }
+
+  .descdescrpitionroject > p{
+    width: 100%;
   }
 
   .lisTag {
@@ -1423,7 +1416,7 @@ a {
 
 
   #website {
-    height: 2420px !important;
+    height: 2650px !important;
   }
 
   #mais {
@@ -1457,13 +1450,11 @@ a {
     flex-direction: column-reverse;
     height: 700px;
   }
-
-  #div2 {
-    height: 5350px !important;
-  }
-
+  
+ 
+ 
   .web{
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 
   .descdescrpitionroject > p{
