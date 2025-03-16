@@ -946,19 +946,18 @@ a {
     width: 100%;
   }
 
+  .web{
+    margin-top: 50px !;
+  }
  
+  #projeto > h4{
+    text-align: center;
+  }
 
  .apresentacao1 > a{
   display: none;
  }
 
-  .apresentacao>h2 {
-    position: relative;
-  }
-
-  .apresentacao1>h2 {
-    position: relative;
-  }
 
   .perfil {
     display: block;
@@ -970,14 +969,6 @@ a {
     display: none;
   }
 
-  .apresentacao {
-    position: absolute;
-  }
-
-  .apresentacao1 {
-    position: absolute;
-
-  }
 
   .apresentacao>p {
     width: 100%;
@@ -1011,12 +1002,11 @@ a {
     height: 400px;
   }
 
-  #titulo {
-    margin-bottom: 150px;
-    text-align: center;
-  }
-
   
+  .container_descricao{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .descdescrpitionroject {
     width: 100%;
@@ -1025,18 +1015,16 @@ a {
   .ftProjeto {
     display: block;
     margin: 10px auto;
-    position: relative;
   }
 
   .ftProjeto1 {
     display: block;
     margin: 10px auto;
-    position: relative;
   }
 
   #website {
 
-    height: 1820px;
+    height: 2120px;
   }
 
   #space1,
@@ -1207,14 +1195,7 @@ a {
     width: 100%;
   }
 
-  .apresentacao>h2 {
-    position: relative;
-  }
-
-  .apresentacao1>h2 {
-    position: relative;
-  }
-
+  
   .perfilBox {
     display: flex;
     align-items: center;
@@ -1229,25 +1210,6 @@ a {
     display: none;
   }
 
-  .apresentacao {
-    position: absolute;
-
-  }
-
-  .apresentacao1 {
-    position: absolute;
-
-  }
-
-  .apresentacao>p {
-    width: 100%;
-    text-align: left;
-  }
-
-  .apresentacao1>p {
-    width: 100%;
-    text-align: left;
-  }
 
   .space2 {
     display: block;
@@ -1269,14 +1231,6 @@ a {
     height: 400px;
   }
 
-  #titulo {
-    margin-bottom: 150px;
-    text-align: center;
-  }
-
-  .descdescrpitionroject {
-    width: 100%;
-  }
 
   .ftProjeto {
     display: block;
@@ -1299,7 +1253,7 @@ a {
   }
 
   #website {
-    height: 1900px !important;
+    height: 2150px !important;
   }
 
   .mais {
@@ -1448,7 +1402,7 @@ a {
   }
 
   #div2 {
-    height: 4850px ;
+    height: 5100px !important ;
   }
 
   .article {
@@ -1456,47 +1410,21 @@ a {
   }
 
   #div2 {
-    height: 3650px;
+    height: 5350px !important;
   }
 
-  #titulo {
-    margin-bottom: 150px;
-    text-align: center;
-  }
-  #titulo2 {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .descdescrpitionroject {
-    width: 100%;
-  }
-
-  .ftProjeto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .ftProjeto1 {
-    display: block;
-    margin: 60px 0px 0px 0px;
-    position: relative;
+  
+  .web{
+    margin-top: 100px ;
   }
 
   .lisTag {
     display: none;
   }
 
-  .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
 
   #website {
-    height: 2720px;
+    height: 2420px !important;
   }
 
   #mais {
