@@ -10,7 +10,12 @@
 
 @media screen and (min-width: 1920px) and (min-height: 1080px){
   .xx-large {
-    grid-template-rows: 715px 600px 3750px 500px 60px !important;
+    grid-template-rows: 715px 600px auto 500px 60px !important;
+  }
+
+  #div2 {
+    height: auto !important;
+    min-height: fit-content;
   }
 
   #menuL{
@@ -32,7 +37,12 @@
 
 @media screen and (min-width: 1281px) and (min-height:768px) {
   .xx-large {
-    grid-template-rows: 715px 600px 3650px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 }
 
@@ -127,7 +137,12 @@ h2.my3 {
 /* Telas médias - Landscape */
 @media screen and (max-width: 1280px) and (max-height: 768px) and (orientation: landscape) {
   .x-scape {
-    grid-template-rows: 715px 600px 3650px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   h2.t3 {
@@ -189,8 +204,6 @@ h2.my3 {
     width: 850px;
   }
 
-
-
   #div5 a {
     font-size: 32pt;
   }
@@ -200,14 +213,17 @@ h2.my3 {
   }
 }
 
-
 /* Telas médias - Portrait */
 @media screen and (max-width: 1200px) and (min-height: 768px) and (orientation: portrait) {
   .x-large {
-    grid-template-rows: 715px 600px 3650px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 }
-
 
 h2.t3 {
   font-size: 24pt;
@@ -278,9 +294,13 @@ a {
 
 @media screen and (max-width: 1139px) and (min-height: 768px) and (orientation: landscape) {
   .x-scape {
-    grid-template-rows: 715px 600px 4350px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
   }
 
+  #div2 {
+    height: auto;
+    min-height: fit-content;
+  }
 
   .boxl {
     height: 650px;
@@ -332,7 +352,12 @@ a {
 /* Celulares - Landscape */
 @media screen and (max-width: 1070px) and (min-height: 768px) and (orientation: landscape) {
   .l-scape {
-    grid-template-rows: 715px 600px 4400px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   .t3l-scape {
@@ -342,7 +367,6 @@ a {
   .py1 {
     margin-left: 0px;
   }
-
 
   #projeto {
     display: flex;
@@ -405,11 +429,15 @@ a {
   }
 }
 
-
 /* Celulares - Portrait */
 @media screen and (max-width: 992px) and (min-height: 280px) {
   .large {
-    grid-template-rows: 715px 600px 4400px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   .ftProjeto {
@@ -473,7 +501,12 @@ a {
   /* Celulares - Height: 400px */
   @media screen and (max-width: 992px) and (min-height:300px) {
     .mdpt {
-      grid-template-rows: 420px 600px 4150px 500px 60px;
+      grid-template-rows: 420px 600px auto 500px 60px;
+    }
+
+    #div2 {
+      height: auto;
+      min-height: fit-content;
     }
 
     header img {
@@ -558,7 +591,6 @@ a {
 
 @media screen and (max-width: 950px) and (min-height:300px) {
 
-
   .descdescrpitionroject {
     width: 100%;
     font-size: 10pt;
@@ -583,14 +615,16 @@ a {
   .ftProjeto1 {
     width: 200px;
   }
-
-
-
 }
 
 @media screen and (max-width: 827px) and (min-height:300px) {
   .mdpt {
-    grid-template-rows: 415px 600px 3350px 500px 60px;
+    grid-template-rows: 415px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   .apresentacao1 > a{
@@ -626,7 +660,6 @@ a {
     width: 200px;
   }
 
-
   .py1,
   img {
     width: 10%;
@@ -648,20 +681,23 @@ a {
   }
 }
 
-
 /* Tablets - Landscape */
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .md-scape {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    grid-template-rows: 715px 600px 2450px 500px 60px;
+    grid-template-rows: 715px 600px auto 500px 60px;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   .t3-md {
     font-size: 18pt;
   }
-
 
   .space2 {
     justify-content: space-between;
@@ -763,17 +799,18 @@ a {
   .t3 {
     display: none;
   }
-
-
-
 }
-
 
 /* Tablets - Portrait */
 @media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .md {
-    grid-template-rows: 420px 800px 2500px 500px 60px;
+    grid-template-rows: 420px 800px auto 500px 60px;
     display: block;
+  }
+
+  #div2 {
+    height: auto;
+    min-height: fit-content;
   }
 
   header,
@@ -809,7 +846,7 @@ a {
   }
 
   #website {
-    height: 1850px;
+    height: auto;
   }
 
   #mais {
@@ -837,7 +874,6 @@ a {
     display: none !important;
   }
 
-
   #lik,
   #git,
   #insta {
@@ -905,7 +941,6 @@ a {
 
   }
 
-
   .envio {
     display: none;
   }
@@ -920,6 +955,11 @@ a {
 @media screen and (max-width: 640px) {
   .sm-scape {
     display: block;
+  }
+
+  #div2 {
+    height: auto !important;
+    min-height: fit-content;
   }
 
   header,
@@ -940,8 +980,6 @@ a {
     height: 900px;
   }
 
-
-
   .article {
     width: 100%;
   }
@@ -955,20 +993,14 @@ a {
     text-align: center;
   }
 
- .apresentacao1 > a{
- }
-
-
   .perfil {
     display: block;
     margin: 0px auto;
   }
 
-
   .lisTag {
     display: none;
   }
-
 
   .apresentacao>p {
     width: 100%;
@@ -979,8 +1011,6 @@ a {
     width: 100%;
     text-align: left;
   }
-
-
 
   .space2 {
     display: block;
@@ -993,16 +1023,13 @@ a {
   header img {
     width: 100%;
     background-size: cover;
-    height:
-      500px;
+    height: 500px;
   }
-
 
   #div3 {
     height: 400px;
   }
 
-  
   .container_descricao{
     display: flex;
     flex-direction: column-reverse;
@@ -1023,8 +1050,7 @@ a {
   }
 
   #website {
-
-    height: 2320px;
+    height: auto;
   }
 
   #space1,
@@ -1042,7 +1068,6 @@ a {
 
   #p2 img {
     width: 50%;
-
   }
 
   #menuL.active {
@@ -1059,7 +1084,6 @@ a {
   .lateral #menuL {
     display: none !important;
   }
-
 
   #lik,
   #git,
@@ -1101,7 +1125,6 @@ a {
 
   #menuL.active {
     display: block !important;
-
   }
 
   .py1 {
@@ -1125,7 +1148,6 @@ a {
   .foto1 {
     width: 300px;
     height: 450px;
-
   }
 
   .contato,
@@ -1141,11 +1163,9 @@ a {
     width: 50%;
   }
 
-
   .pc2 {
     width: 70%;
   }
-
 
   .pc3 {
     width: 45%;
@@ -1160,10 +1180,14 @@ a {
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .sm-scape {
     display: block;
+  }
+
+  #div2 {
+    height: auto !important;
+    min-height: fit-content;
   }
 
   header,
@@ -1191,29 +1215,25 @@ a {
     height: 900px;
   }
 
- #div2{
-  height: 5250px;
- }
+  #div2{
+    height: auto !important;
+    min-height: fit-content;
+  }
 
   .article {
     width: 100%;
   }
 
-  
   .perfilBox {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
-
   }
-
-
 
   .lisTag {
     display: none;
   }
-
 
   .space2 {
     display: block;
@@ -1226,17 +1246,12 @@ a {
   header img {
     width: 100%;
     background-size: cover;
-    height:
-      500px;
+    height: 500px;
   }
-
 
   #div3 {
     height: 400px;
   }
-
-
- 
 
   #space1,
   #space3 {
@@ -1246,7 +1261,7 @@ a {
   }
 
   #website {
-    height: 2400px !important;
+    height: auto !important;
   }
 
   .mais {
@@ -1257,7 +1272,6 @@ a {
 
   #p2 img {
     width: 50%;
-
   }
 
   #menuL.active {
@@ -1274,7 +1288,6 @@ a {
   .lateral #menuL {
     display: none !important;
   }
-
 
   #lik,
   #git,
@@ -1316,7 +1329,6 @@ a {
 
   #menuL.active {
     display: block !important;
-
   }
 
   .py1 {
@@ -1340,7 +1352,6 @@ a {
   .foto1 {
     width: 300px;
     height: 450px;
-
   }
 
   .contato,
@@ -1356,11 +1367,9 @@ a {
     width: 50%;
   }
 
-
   .pc2 {
     width: 70%;
   }
-
 
   .pc3 {
     width: 45%;
@@ -1375,15 +1384,18 @@ a {
   }
 }
 
-
 @media screen and (max-width: 445px) {
-
   #div1 {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
     padding: 20px;
     height: 700px;
+  }
+
+  #div2 {
+    height: auto !important;
+    min-height: fit-content;
   }
 
   header img{
@@ -1395,7 +1407,8 @@ a {
   }
 
   #div2{
-    height: 5600px !important;
+    height: auto !important;
+    min-height: fit-content;
   }
 
   .article {
@@ -1414,9 +1427,8 @@ a {
     display: none;
   }
 
-
   #website {
-    height: 2650px !important;
+    height: auto !important;
   }
 
   #mais {
@@ -1434,7 +1446,6 @@ a {
   .pc2,
   .pc3 {
     font-size: 14pt !important;
-    /* Tamanho de fonte responsivo */
   }
 
   #p2 span img {
@@ -1443,15 +1454,17 @@ a {
 }
 
 @media screen and (max-width: 390px) {
-
   #div1 {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
     height: 700px;
   }
-  
- 
+
+  #div2 {
+    height: auto !important;
+    min-height: fit-content;
+  }
  
   .web{
     margin-bottom: 100px;
