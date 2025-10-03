@@ -307,7 +307,6 @@
   </main>
 
  <script>
-    // JavaScript para o carrossel automático
     document.addEventListener('DOMContentLoaded', function() {
         const slider = document.querySelector('.projects-slider');
         const leftButton = document.querySelector('.arrow-left');
@@ -317,20 +316,17 @@
         let currentPosition = 0;
         let autoScrollInterval;
         let isScrolling = false;
-        let direction = 1; // 1 para direita, -1 para esquerda
+        let direction = 1;
 
         // Função para calcular a largura do card baseada no dispositivo
         function getCardWidth() {
             const isMobile = window.innerWidth <= 768;
             if (isMobile) {
-                // No mobile, mostra apenas 1 card por vez - usa 100% da largura do container
-                return slider.offsetWidth + 30; // + gap
+                return slider.offsetWidth + 30; 
             } else if (window.innerWidth <= 1024) {
-                // Tablet - 2 cards
-                return (slider.offsetWidth / 2) + 15; // + metade do gap
+                return (slider.offsetWidth / 2) + 15;
             } else {
-                // Desktop - 3 cards
-                return (slider.offsetWidth / 3) + 10; // + um terço do gap
+                return (slider.offsetWidth / 3) + 10;
             }
         }
 
@@ -356,7 +352,6 @@
                 behavior: 'smooth'
             });
             
-            // Reset do flag após a animação
             setTimeout(() => {
                 isScrolling = false;
             }, 500);
@@ -370,9 +365,8 @@
             const maxPosition = getMaxPosition();
             
             if (currentPosition <= maxPosition) {
-                // Volta para o início quando chega no final
                 currentPosition = 0;
-                direction = 1; // Continua indo para a direita
+                direction = 1; 
             } else {
                 currentPosition -= cardWidth;
             }
@@ -387,9 +381,8 @@
             const cardWidth = getCardWidth();
             
             if (currentPosition >= 0) {
-                // Vai para o final quando está no início
                 currentPosition = getMaxPosition();
-                direction = -1; // Continua indo para a esquerda
+                direction = -1; 
             } else {
                 currentPosition += cardWidth;
             }
@@ -405,7 +398,6 @@
                 prevSlide();
             }
             
-            // Inverte a direção quando chega nas extremidades
             const maxPosition = getMaxPosition();
             if (currentPosition <= maxPosition || currentPosition >= 0) {
                 direction *= -1;
@@ -414,7 +406,7 @@
 
         // Iniciar rolagem automática
         function startAutoScroll() {
-            autoScrollInterval = setInterval(autoScroll, 3500); // Muda a cada 3.5 segundos
+            autoScrollInterval = setInterval(autoScroll, 4000); 
         }
 
         // Parar rolagem automática
@@ -425,10 +417,9 @@
         // Reiniciar rolagem automática após interação do usuário
         function restartAutoScroll() {
             stopAutoScroll();
-            setTimeout(startAutoScroll, 8000); // Reinicia após 8 segundos
+            setTimeout(startAutoScroll, 8000);
         }
 
-        // Event listeners para controles manuais
         rightButton.addEventListener('click', function() {
             nextSlide();
             restartAutoScroll();
@@ -439,26 +430,21 @@
             restartAutoScroll();
         });
 
-        // Pausar auto-scroll quando o mouse estiver sobre o carrossel
         slider.addEventListener('mouseenter', stopAutoScroll);
         slider.addEventListener('mouseleave', startAutoScroll);
 
-        // Pausar auto-scroll quando o mouse estiver sobre os botões
         leftButton.addEventListener('mouseenter', stopAutoScroll);
         rightButton.addEventListener('mouseenter', stopAutoScroll);
         leftButton.addEventListener('mouseleave', startAutoScroll);
         rightButton.addEventListener('mouseleave', startAutoScroll);
 
-        // Recalcular dimensões quando a janela for redimensionada
         window.addEventListener('resize', function() {
             currentPosition = 0;
             smoothScrollTo(currentPosition);
-            // Reinicia o auto-scroll após redimensionamento
             restartAutoScroll();
         });
 
-        // Iniciar auto-scroll quando a página carregar
-        setTimeout(startAutoScroll, 1000); // Delay inicial de 1 segundo
+        setTimeout(startAutoScroll, 1000); 
 
         // Navegação entre seções do portfólio
         const navLinks = document.querySelectorAll('#div2 nav a');
@@ -468,23 +454,18 @@
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                // Remove a classe active de todos os links e seções
                 navLinks.forEach(l => l.classList.remove('active'));
                 portfolioSections.forEach(s => s.classList.remove('active'));
                 
-                // Adiciona a classe active ao link clicado
                 this.classList.add('active');
                 
-                // Mostra a seção correspondente
                 const target = this.getAttribute('data-target');
                 document.getElementById(target).classList.add('active');
                 
-                // Para o auto-scroll quando mudar de seção
                 stopAutoScroll();
             });
         });
 
-        // Reiniciar auto-scroll quando voltar para a seção Web
         const webSectionLink = document.querySelector('#div2 nav a[data-target="website"]');
         if (webSectionLink) {
             webSectionLink.addEventListener('click', function() {
