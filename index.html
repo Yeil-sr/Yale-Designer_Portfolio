@@ -279,7 +279,55 @@
         </div>
     </div>
     </div>
+    <div id="div4">
+    <div class="loja-virtual-content">
+    <div class="loja-texto">
+      <h2>Comece a vender pela internet!</h2>
+      <h3>Criação de Loja Virtual Completa</h3>
+      <p>Desenvolvemos sua Loja Virtual completa, personalizada e sob medida para sua empresa.</p>
+      <p>Nossa Loja Virtual possui um design sofisticado, simples e intuitivo para seus clientes realizarem as compras.</p>
+      
+      <ul class="loja-beneficios">
+        <li>
+          <div class="beneficio-item">
+            <span class="checkmark">✓</span>
+            <span class="beneficio-texto">Checkout transparente</span>
+          </div>
+        </li>
+        <li>
+          <div class="beneficio-item">
+            <span class="checkmark">✓</span>
+            <span class="beneficio-texto">Sem limites de produtos</span>
+          </div>
+        </li>
+        <li>
+          <div class="beneficio-item">
+            <span class="checkmark">✓</span>
+            <span class="beneficio-texto">Formas de entrega</span>
+          </div>
+        </li>
+        <li>
+          <div class="beneficio-item">
+            <span class="checkmark">✓</span>
+            <span class="beneficio-texto">Controle de estoque</span>
+          </div>
+        </li>
+        <li>
+          <div class="beneficio-item">
+            <span class="checkmark">✓</span>
+            <span class="beneficio-texto">Integrações e muito mais!</span>
+          </div>
+        </li>
+      </ul>
+      
+      <a href="#" class="btn-saiba-mais">Saiba Mais →</a>
+    </div>
     
+    <div class="loja-imagem">
+      <img src="./src/public/assets/img/Ecommerce web page-pana.png" style="width: 105%;" alt="Exemplo de Loja Virtual">
+    </div>
+  </div>
+    </div>
     <div id="div3">
       <div class="envio">
         <img src="./src/public/assets/img/1080x1080/envio.png" alt="envio">
@@ -305,178 +353,6 @@
       <small> &copy;copyright2025 Todos os direitos reservados.<p>Yale Designer</p></small>
     </footer>
   </main>
-
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const slider = document.querySelector('.projects-slider');
-        const leftButton = document.querySelector('.arrow-left');
-        const rightButton = document.querySelector('.arrow-right');
-        const projectCards = document.querySelectorAll('.project-card');
-        
-        let currentPosition = 0;
-        let autoScrollInterval;
-        let isScrolling = false;
-        let direction = 1;
-
-        // Função para calcular a largura do card baseada no dispositivo
-        function getCardWidth() {
-            const isMobile = window.innerWidth <= 768;
-            if (isMobile) {
-                return slider.offsetWidth + 30; 
-            } else if (window.innerWidth <= 1024) {
-                return (slider.offsetWidth / 2) + 15;
-            } else {
-                return (slider.offsetWidth / 3) + 10;
-            }
-        }
-
-        // Função para calcular a posição máxima
-        function getMaxPosition() {
-            const cardWidth = getCardWidth();
-            const visibleCards = getVisibleCardsCount();
-            return -((cardWidth - 30) * (projectCards.length - visibleCards));
-        }
-
-        // Função para obter quantos cards são visíveis
-        function getVisibleCardsCount() {
-            if (window.innerWidth <= 768) return 1;
-            if (window.innerWidth <= 1024) return 2;
-            return 3;
-        }
-
-        // Função para rolar suavemente
-        function smoothScrollTo(position) {
-            isScrolling = true;
-            slider.scrollTo({
-                left: -position,
-                behavior: 'smooth'
-            });
-            
-            setTimeout(() => {
-                isScrolling = false;
-            }, 500);
-        }
-
-        // Função para próximo card
-        function nextSlide() {
-            if (isScrolling) return;
-            
-            const cardWidth = getCardWidth();
-            const maxPosition = getMaxPosition();
-            
-            if (currentPosition <= maxPosition) {
-                currentPosition = 0;
-                direction = 1; 
-            } else {
-                currentPosition -= cardWidth;
-            }
-            
-            smoothScrollTo(currentPosition);
-        }
-
-        // Função para card anterior
-        function prevSlide() {
-            if (isScrolling) return;
-            
-            const cardWidth = getCardWidth();
-            
-            if (currentPosition >= 0) {
-                currentPosition = getMaxPosition();
-                direction = -1; 
-            } else {
-                currentPosition += cardWidth;
-            }
-            
-            smoothScrollTo(currentPosition);
-        }
-
-        // Função principal de rotação automática
-        function autoScroll() {
-            if (direction === 1) {
-                nextSlide();
-            } else {
-                prevSlide();
-            }
-            
-            const maxPosition = getMaxPosition();
-            if (currentPosition <= maxPosition || currentPosition >= 0) {
-                direction *= -1;
-            }
-        }
-
-        // Iniciar rolagem automática
-        function startAutoScroll() {
-            autoScrollInterval = setInterval(autoScroll, 4000); 
-        }
-
-        // Parar rolagem automática
-        function stopAutoScroll() {
-            clearInterval(autoScrollInterval);
-        }
-
-        // Reiniciar rolagem automática após interação do usuário
-        function restartAutoScroll() {
-            stopAutoScroll();
-            setTimeout(startAutoScroll, 8000);
-        }
-
-        rightButton.addEventListener('click', function() {
-            nextSlide();
-            restartAutoScroll();
-        });
-        
-        leftButton.addEventListener('click', function() {
-            prevSlide();
-            restartAutoScroll();
-        });
-
-        slider.addEventListener('mouseenter', stopAutoScroll);
-        slider.addEventListener('mouseleave', startAutoScroll);
-
-        leftButton.addEventListener('mouseenter', stopAutoScroll);
-        rightButton.addEventListener('mouseenter', stopAutoScroll);
-        leftButton.addEventListener('mouseleave', startAutoScroll);
-        rightButton.addEventListener('mouseleave', startAutoScroll);
-
-        window.addEventListener('resize', function() {
-            currentPosition = 0;
-            smoothScrollTo(currentPosition);
-            restartAutoScroll();
-        });
-
-        setTimeout(startAutoScroll, 1000); 
-
-        // Navegação entre seções do portfólio
-        const navLinks = document.querySelectorAll('#div2 nav a');
-        const portfolioSections = document.querySelectorAll('.portfolio-section');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                navLinks.forEach(l => l.classList.remove('active'));
-                portfolioSections.forEach(s => s.classList.remove('active'));
-                
-                this.classList.add('active');
-                
-                const target = this.getAttribute('data-target');
-                document.getElementById(target).classList.add('active');
-                
-                stopAutoScroll();
-            });
-        });
-
-        const webSectionLink = document.querySelector('#div2 nav a[data-target="website"]');
-        if (webSectionLink) {
-            webSectionLink.addEventListener('click', function() {
-                setTimeout(() => {
-                    currentPosition = 0;
-                    smoothScrollTo(currentPosition);
-                    setTimeout(startAutoScroll, 1000);
-                }, 100);
-            });
-        }
-    });
-</script>
+<script type="module" src="./src/public/assets/scripts/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,336 @@
+/* div4.css - Estilos responsivos para a seção de Loja Virtual */
+
+#div4 {
+  grid-area: d;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin-right: 10px;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.loja-virtual-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.loja-texto h2 {
+  margin: 0px 0px 10px 0px;
+  font-size: 24px;
+  color: var(--azulescuro);
+  font-weight: 700;
+  font-family: Aleo;
+}
+
+.loja-texto h3 {
+  font-size: var(--fontxxl);
+  color: #333;
+  margin: 0px 0px 15px 0px;
+  font-weight: 700;
+  font-family: Aleo;
+  line-height: 1.2;
+}
+
+.loja-texto p {
+  font-size: var(--fontlg);
+  font-family: Aleo;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.loja-beneficios {
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.loja-beneficios li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.beneficio-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkmark {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  color: var(--azulescuro);
+  font-family: Aleo;
+  font-weight: bold;
+  font-size: var(--fontlg);
+  margin-right: 12px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.beneficio-texto {
+  font-size: var(--fontlg);
+  color: #444;
+  line-height: 1.4;
+  font-family: Aleo;
+}
+
+.btn-saiba-mais {
+  display: inline-block;
+  background: linear-gradient(to right, var(--azulescuro), var(--azulclaro));
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Aleo;
+  font-size: var(--fontlg);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 81, 255, 0.3);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-saiba-mais:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 81, 255, 0.4);
+}
+
+.loja-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.loja-imagem img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.loja-imagem img:hover {
+  transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .loja-virtual-content {
+    gap: 40px;
+  }
+  
+  .loja-texto h2 {
+    font-size: 22px;
+  }
+  
+  .loja-texto h3 {
+    font-size: var(--fontxl);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #div4 {
+    padding: 50px 20px;
+    min-height: 500px;
+  }
+  
+  .loja-virtual-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .loja-texto h2 {
+    font-size: 20px;
+  }
+  
+  .loja-texto h3 {
+    font-size: var(--fontxl2);
+  }
+  
+  .loja-texto p {
+    font-size: var(--fontlg2);
+  }
+  
+  .beneficio-item {
+    justify-content: center;
+  }
+  
+  .beneficio-texto {
+    font-size: var(--fontlg2);
+  }
+  
+  .loja-imagem {
+    order: -1;
+  }
+  
+  .loja-imagem img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #div4 {
+    padding: 40px 15px;
+    min-height: auto;
+  }
+  
+  .loja-virtual-content {
+    gap: 30px;
+  }
+  
+  .loja-texto h2 {
+    font-size: var(--fontlg);
+  }
+  
+  .loja-texto h3 {
+    font-size: var(--fontxl2);
+    margin-bottom: 10px;
+  }
+  
+  .loja-texto p {
+    font-size: var(--fontmd);
+    margin-bottom: 10px;
+  }
+  
+  .loja-beneficios {
+    margin: 20px 0;
+  }
+  
+  .beneficio-texto {
+    font-size: var(--fontmd);
+  }
+  
+  .btn-saiba-mais {
+    padding: 12px 25px;
+    font-size: var(--fontmd);
+  }
+  
+  .loja-imagem img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #div4 {
+    padding: 30px 15px;
+    margin-right: 0;
+  }
+  
+  .loja-texto h2 {
+    font-size: var(--fontlg2);
+  }
+  
+  .loja-texto h3 {
+    font-size: var(--fontlg);
+  }
+  
+  .loja-texto p {
+    font-size: var(--fontmd);
+  }
+  
+  .beneficio-item {
+    justify-content: flex-start;
+  }
+  
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    font-size: var(--fontmd);
+    margin-right: 10px;
+  }
+  
+  .beneficio-texto {
+    font-size: var(--fontmd);
+  }
+  
+  .loja-imagem img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #div4 {
+    padding: 25px 10px;
+  }
+  
+  .loja-virtual-content {
+    gap: 25px;
+  }
+  
+  .loja-texto h2 {
+    font-size: 18px;
+  }
+  
+  .loja-texto h3 {
+    font-size: 20px;
+  }
+  
+  .loja-texto p {
+    font-size: 14px;
+  }
+  
+  .loja-beneficios {
+    margin: 15px 0;
+  }
+  
+  .loja-beneficios li {
+    margin-bottom: 10px;
+  }
+  
+  .checkmark {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+  .beneficio-texto {
+    font-size: 14px;
+  }
+  
+  .btn-saiba-mais {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #div4 {
+    padding: 20px 8px;
+  }
+  
+  .loja-texto h2 {
+    font-size: 16px;
+  }
+  
+  .loja-texto h3 {
+    font-size: 18px;
+  }
+  
+  .loja-texto p {
+    font-size: 13px;
+  }
+  
+  .beneficio-texto {
+    font-size: 13px;
+  }
+  
+  .btn-saiba-mais {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
