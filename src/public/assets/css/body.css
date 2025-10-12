@@ -10,13 +10,14 @@ main{
    background-size: cover;
    background-repeat: no-repeat;
    grid-template-columns:  repeat(6, 1fr);   
-   grid-template-rows: 715px 600px 1000px 500px 60px;
+   grid-template-rows: 715px 600px 1000px auto 500px 60px;
    overflow-x: hidden;  
    grid-template-areas:
 
    "s c c c c c"
    "s i i i i i"
    "s f f f f f"
+   "s d d d d d"
    "s e e e e e"
    "s r r r r r "
 ;
