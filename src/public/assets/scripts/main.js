@@ -1,22 +1,19 @@
-// Função para o carrossel de projetos
 function initProjectCarousel() {
     const slider = document.querySelector('.projects-slider');
     const leftButton = document.querySelector('.arrow-left');
     const rightButton = document.querySelector('.arrow-right');
     let projectCards = document.querySelectorAll('.project-card');
-    
+
     let currentPosition = 0;
-    let autoScrollInterval;
     let isScrolling = false;
 
-    // Duplicar os cards para criar efeito infinito
+    // Duplicar os cards para criar efeito infinito (mantemos)
     function duplicateCardsForInfiniteEffect() {
         const cardsToDuplicate = Array.from(projectCards);
         cardsToDuplicate.forEach(card => {
             const clone = card.cloneNode(true);
             slider.appendChild(clone);
         });
-        
         // Atualizar a lista de cards após duplicação
         projectCards = document.querySelectorAll('.project-card');
     }
@@ -55,23 +52,23 @@ function initProjectCarousel() {
             left: -position,
             behavior: 'smooth'
         });
-        
+
         setTimeout(() => {
             isScrolling = false;
         }, 500);
     }
 
-    // Próximo slide - sempre para a direita
+    // Próximo slide - sempre para a direita (manual)
     function nextSlide() {
         if (isScrolling) return;
-        
+
         const cardWidth = getCardWidth();
         const maxPosition = getMaxPosition();
-        
+
         // Avança para o próximo card
         currentPosition -= cardWidth;
-        
-        // Se chegou ao final dos cards originais, volta suavemente ao início
+
+        // Se chegou ao final dos cards originais, reset suave ao início
         if (currentPosition <= maxPosition - cardWidth) {
             // Reset suave para a posição inicial
             setTimeout(() => {
@@ -82,125 +79,103 @@ function initProjectCarousel() {
                 });
             }, 500);
         }
-        
+
         smoothScrollTo(currentPosition);
     }
 
-    // Slide anterior (para navegação manual)
+    // Slide anterior (manual)
     function prevSlide() {
         if (isScrolling) return;
-        
+
         const cardWidth = getCardWidth();
         const maxPosition = getMaxPosition();
-        
+
         // Se está no início, vai para o final
         if (currentPosition >= 0) {
             currentPosition = maxPosition - cardWidth;
         } else {
             currentPosition += cardWidth;
         }
-        
+
         smoothScrollTo(currentPosition);
-        restartAutoScroll();
     }
 
-    // Iniciar rolagem automática infinita
-    function startAutoScroll() {
-        autoScrollInterval = setInterval(nextSlide, 3000);
-    }
-
-    // Parar rolagem automática
-    function stopAutoScroll() {
-        clearInterval(autoScrollInterval);
-    }
-
-    // Reiniciar rolagem automática após interação
-    function restartAutoScroll() {
-        stopAutoScroll();
-        setTimeout(startAutoScroll, 8000);
-    }
-
-    // Inicialização do carrossel
+    // Inicialização do carrossel (sem auto-scroll)
     function initCarousel() {
         // Duplicar cards para efeito infinito
         duplicateCardsForInfiniteEffect();
-        
-        // Configurar eventos
-        rightButton.addEventListener('click', nextSlide);
-        leftButton.addEventListener('click', prevSlide);
 
-        // Pausar ao interagir
-        slider.addEventListener('mouseenter', stopAutoScroll);
-        slider.addEventListener('mouseleave', startAutoScroll);
+        // Configurar eventos manuais
+        if (rightButton) rightButton.addEventListener('click', nextSlide);
+        if (leftButton) leftButton.addEventListener('click', prevSlide);
 
-        leftButton.addEventListener('mouseenter', stopAutoScroll);
-        rightButton.addEventListener('mouseenter', stopAutoScroll);
-        leftButton.addEventListener('mouseleave', startAutoScroll);
-        rightButton.addEventListener('mouseleave', startAutoScroll);
+        // Remover qualquer lógica de auto-scroll / timers:
+        // - NÃO iniciar setInterval
+        // - NÃO adicionar listeners de mouseenter/mouseleave que iniciem/pararem auto-scroll
 
-        // Iniciar automaticamente
-        setTimeout(startAutoScroll, 1000);
+        // Opcional: suporte a navegação via teclado (setas)
+        slider.setAttribute('tabindex', '0');
+        slider.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
     }
 
-    // Navegação entre seções do portfólio
+    // Navegação entre seções do portfólio (mantida)
     function initPortfolioNavigation() {
         const navLinks = document.querySelectorAll('#div2 nav a');
         const portfolioSections = document.querySelectorAll('.portfolio-section');
-        
+
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 // Remover classe active de todos
                 navLinks.forEach(l => l.classList.remove('active'));
                 portfolioSections.forEach(s => s.classList.remove('active'));
-                
+
                 // Adicionar classe active ao link clicado
                 this.classList.add('active');
-                
+
                 // Mostrar seção correspondente
                 const target = this.getAttribute('data-target');
                 document.getElementById(target).classList.add('active');
-                
-                // Se for a seção Web, reiniciar o carrossel
+
+                // Se for a seção Web, resetar posição do carrossel (sem iniciar auto-scroll)
                 if (target === 'website') {
-                    stopAutoScroll();
                     currentPosition = 0;
                     smoothScrollTo(currentPosition);
-                    setTimeout(startAutoScroll, 1000);
-                } else {
-                    stopAutoScroll();
                 }
             });
         });
     }
 
-    // Redimensionamento da janela
+    // Redimensionamento da janela (mantemos ajuste)
     function handleResize() {
-        stopAutoScroll();
         currentPosition = 0;
         smoothScrollTo(currentPosition);
-        
-        // Limpar e recriar o carrossel para ajustar ao novo tamanho
-        const originalCards = document.querySelectorAll('.project-card');
-        const half = originalCards.length / 2;
-        
-        // Remover cards duplicados
-        for (let i = half; i < originalCards.length; i++) {
-            originalCards[i].remove();
-        }
-        
+
+        // Remover cards duplicados (se existirem) e recriar duplicação
+        const originalCards = Array.from(document.querySelectorAll('.project-card'));
+        const half = Math.floor(originalCards.length / 2);
+
+        // Remover os clones (assumimos que os clones estão após os originais)
+        const sliderChildren = Array.from(slider.children);
+        // Remove todos e re-adiciona apenas os originais
+        slider.innerHTML = '';
+        originalCards.slice(0, half || originalCards.length).forEach(card => {
+            slider.appendChild(card);
+        });
+
         // Recriar efeito infinito
+        projectCards = document.querySelectorAll('.project-card');
         duplicateCardsForInfiniteEffect();
-        
-        // Reiniciar auto scroll
-        setTimeout(startAutoScroll, 500);
     }
 
     // Inicializar o carrossel e a navegação
     initCarousel();
     initPortfolioNavigation();
-    
+
     // Configurar redimensionamento
     window.addEventListener('resize', handleResize);
 }

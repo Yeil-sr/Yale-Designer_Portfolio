@@ -8,9 +8,9 @@
 
 /* Telas grandes */
 
-@media screen and (min-width: 1920px) and (min-height: 1080px){
+@media screen and (max-width: 1920px){
   .xx-large {
-    grid-template-rows: 715px 600px auto 500px 60px !important;
+    grid-template-rows: 715px 700px auto 1000px 600px !important;
   }
 
   #div2 {
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 1281px) and (min-height:768px) {
   .xx-large {
-    grid-template-rows: 715px 600px auto 500px 60px;
+    grid-template-rows: 715px 600px auto 1000px 60px;
   }
 
   #div2 {
