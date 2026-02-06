@@ -230,7 +230,6 @@
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s;
-    font-size: 15px;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -238,6 +237,7 @@
     max-width: 250px;
     margin-left: 0;
 }
+
 .plan-cta {
     background: linear-gradient(90deg, #1f4699 0%, #3375ff 100%);
     box-shadow: 0 10px 20px rgb(30 80 200 / 0.2);
@@ -252,6 +252,16 @@
 .plan-cta-recommended:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 30px rgb(0 0 0 / 0.3);
+}
+
+.plan-cta a{
+        font-size: 15px;
+
+}
+
+.plan-cta-recommended a{
+        font-size: 15px;
+
 }
 .plans-note {
     font-size: 16px;
