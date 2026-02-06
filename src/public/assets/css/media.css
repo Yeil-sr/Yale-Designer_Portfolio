@@ -1,3 +1,15 @@
+@media screen and (min-width:1920px){
+    #div1, #div2, #div3, #div4, #div5, #di6, #div7, footer{
+        width: 100% !important;
+    }
+    header{
+        margin: 0px!important;
+    }
+    main{
+        overflow-y: hidden;
+    }
+}
+
 @media screen and (max-width: 992px) {
     html,
     body {
