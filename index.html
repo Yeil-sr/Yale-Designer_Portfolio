@@ -1,384 +1,905 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Olá, meu nome é Yale Souza sou Desenvolvedor e Web Designer. Apaixonado por criar designs visualmente atraentes e experiências únicas.">
-  <meta name="keywords" content="web design, desenvolvimento web, SEO, design responsivo">
-  <meta name="author" content="Yale Souza">
-  <meta property="og:title" content="Yale Designer">
-  <meta property="og:description"
-    content="Desenvolvedor e Web Designer. Apaixonado por criar designs visualmente atraentes e experiências únicas.">
-  <meta property="og:image" content="/img/capaon.png">
-  <meta property="og:url" content="www.yaledesigner.com.br ">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="/src/public/assets/img/1080x1080/logo.jpg">
-  <link rel="stylesheet" href="/src/public/assets/css/estilo.css">
-  <script type="module" src="/src/public/assets/scripts/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Olá, meu nome é Yale Souza sou Desenvolvedor e Web Designer. Apaixonado por criar designs visualmente atraentes e experiências únicas.">
+    <meta name="keywords" content="web design, desenvolvimento web, SEO, design responsivo">
+    <meta name="author" content="Yale Souza">
+    <meta property="og:title" content="Yale Designer">
+    <meta property="og:description"
+        content="Desenvolvedor e Web Designer. Apaixonado por criar designs visualmente atraentes e experiências únicas.">
+    <meta property="og:image" content="/img/capaon.png">
+    <meta property="og:url" content="www.yaledesigner.com.br ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/src/public/assets/img/1080x1080/logo.jpg">
+    <!-- Adicionando Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/src/public/assets/css/estilo.css">
+    <script type="module" src="/src/public/assets/scripts/main.js" defer></script>
 
-  <title>Yale Designer</title>
+    <title>Yale Designer</title>
 </head>
 
 <body>
-  <main class="sm sm-scape md mdpt md-scape large l-scape x-large x-scape xx-large">
-    <div class="lateral">
-      <!-- MENU LATERAL -->
-      <img class="#banner" src="./src/public/assets/img/1080x1080/logo1.jpg">
-      <h2 class="t3-smpt t3-sm t3-mdpt t3-md t3l-pt t3l-scape t3 ">YALE <br>DESIGNER</h2>
-      <a class="btn"><img class="mobile" src="./src/public/assets/img/icons/menu.png"></a>
-      <nav id="menuL">
-        <p class="py1"><img class="l1" src="./src/public/assets/img/icons/home.svg"><a class="a-smpt a-sm a-mdpt a-md al-pt al-scape"
-            href="#banner">HOME</a></p>
-            <p class="py1"><img class="l1" src="./src/public/assets/img/icons/user.svg"><a class="a-smpt a-sm a-mdpt a-md al-pt al-scape"
-              href="#div1">SOBRE</a></p>
-        <p class="py1"><img class="l1" src="./src/public/assets/img/icons/projetos.svg"><a class="a-smpt a-sm a-mdpt a-md al-pt al-scape"
-            href="#div2">PORTIFÓLIO</a></p>
-        <p class="py1"><img class="l1" src="./src/public/assets/img/icons/contato.svg"><a class="a-smpt a-sm a-mdpt a-md al-pt al-scape"
-            href="#div3">CONTATO</a></p>
-        <div class="py1">
-          <a href="https://www.linkedin.com/in/yale-souza/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg></a>
-          
-          <a href="https://github.com/Yeil-sr" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-          </svg></a>
-           
-          <a href="#!" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-          </svg></a>
+    <header class="mobile-header">
+        <div class="mobile-header-content">
+            <div class="mobile-logo">
+                <img src="./src/public/assets/img/1080x1080/logo1.jpg" alt="Logo Yale Designer">
+            </div>
+            <div class="mobile-title">
+                <h2>YALE DESIGNER</h2>
+            </div>
+            <button class="mobile-hamburger" id="mobileHamburgerBtn" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
         </div>
-      </nav>
-    </div>
-    
-    <header id="banner">
-      <img src="./src/public/assets/img/background/capaon.png">
     </header>
-
-    <div id="div1">
-      <div class="sobreMim">
-        <h2>Olá, eu sou <span class="cor-y">Yale</span>
-          <p>Desenvolvedor e Web Designer</p>
-        </h2>
-        <p class="article">
-          Sou apaixonado por criar designs visualmente atraentes
-          e experiências únicas. Meu trabalho envolve tanto a criação de interfaces atrativas
-          quanto a implementação de tecnologias que garantam o bom desempenho dos sites.
-        </p>
-        <a href="https://wa.me/+5527999661081" class="conversar">Vamos Conversar</a>
-      </div>
-      <div class="perfilBox">
-        <img class="perfil" src="./src/public/assets/img/1080x1080/perfil.jpg" alt="Yale Souza">
-      </div>
-    </div>
-    
-    <div id="div2">
-    <!-- NAVEGAÇÃO DO PORTFÓLIO -->
-    <nav>
-        <ul>
-            <li><a href="#website" class="active" data-target="website">Web</a></li>
-            <li><a href="#design" data-target="design">Design</a></li>
-            <li><a href="#speed-arts" data-target="speed-arts">Speed Arts</a></li>
-            <li><a href="#logotipos" data-target="logotipos">Logotipos</a></li>
-            <li><a href="#mobile" data-target="mobile">Mobile</a></li>
-        </ul>
-    </nav>
-    
-    <!-- SEÇÃO WEB -->
-    <section id="website" class="portfolio-section active">
-        <div class="projects-container">
-            <h5>Projetos Web</h5>
-            <div class="projects-content" id="projects">
-                <button class="arrow-left">
-                    <span class="material-symbols-outlined"> &lt;</span>
-                </button>
-                <div class="projects-slider">
-
-                    <!-- Projeto Logistics Xpress -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto07.jpg" alt="Moda Íntima">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Logistics Xpress</h6>
-                                <small>2026</small>
-                            </div>
-                            <div class="project-role">Full Stack</div>
-                            <p class="project-description">Nossa gestão é estrategicamente planejada para atender a diferentes prazos, regiões e demandas, com serviços que garantem a agilidade e a segurança de cada entrega.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">Vue.js</span>
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Express.js</span>
-                                <span class="project-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://logistics-xpress.vercel.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                      <!-- Projeto Moda Íntima -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto06.jpg" alt="Moda Íntima">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Moda Íntima</h6>
-                                <small>2026</small>
-                            </div>
-                            <div class="project-role">Full Stack</div>
-                            <p class="project-description">Nossas coleções são cuidadosamente escolhidas para atender diferentes estilos, ocasiões e necessidades, com produtos que valorizam a beleza e a confiança de cada cliente.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Express.js</span>
-                                <span class="project-tag">MongoDB</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://modaintima.netlify.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto Moxxie Studios -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto04.png" alt="Moxxie Studios">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Moxxie Studios</h6>
-                                <small>2024</small>
-                            </div>
-                            <div class="project-role">Full Stack</div>
-                            <p class="project-description">Bem-vindo à minha coleção de fotografia, onde cada imagem conta uma história. Dos momentos mais doces da vida à energia vibrante da infância e à arte da moda, meu objetivo é capturar a beleza e a emoção que tornam cada instante inesquecível.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">TypeScript</span>
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">CSS</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://moxxiestudios-yeil-srs-projects.vercel.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Projeto Crochê Charm -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto03.png" alt="Crochê Charm">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Crochê Charm</h6>
-                                <small>2024</small>
-                            </div>
-                            <div class="project-role">Full Stack</div>
-                            <p class="project-description">O Crochê Charm é o destino online perfeito para quem valoriza a beleza e o encanto do crochê feito à mão. Oferecemos uma seleção única de croppeds, bolsas e acessórios exclusivos, combinando estilo, conforto e artesanato de qualidade.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">Node.js</span>
-                                <span class="project-tag">Express.js</span>
-                                <span class="project-tag">MongoDB</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://ecommerce-croche-frontend.vercel.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Projeto Barber Shop -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto2.png" alt="Barber Shop">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Barber Shop</h6>
-                                <small>2024</small>
-                            </div>
-                            <div class="project-role">Full Stack</div>
-                            <p class="project-description">No Barber Shop, cada corte é uma expressão de estilo e personalidade. Oferecemos um atendimento exclusivo, unindo tradição, modernidade e excelência para realçar o melhor de você.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">TypeScript</span>
-                                <span class="project-tag">Spring Boot</span>
-                                <span class="project-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://barbershop-git-main-yeil-srs-projects.vercel.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Projeto Cupcake - Landing Page -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./src/public/assets/img/projetos/projeto05.png" alt="Cupcake Landing Page">
-                        </div>
-                        <div class="project-info">
-                            <div class="project-title">
-                                <h6>Cupcake - Landing Page</h6>
-                                <small>2024</small>
-                            </div>
-                            <div class="project-role">Frontend</div>
-                            <p class="project-description">Bem-vindo à nossa página especial de cupcakes, onde cada detalhe é pensado para encantar! Explore um design irresistível, cores vibrantes e animações sutis que tornam a experiência ainda mais deliciosa.</p>
-                            <div class="project-tags">
-                                <span class="project-tag">HTML</span>
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://cupcake-tia-bia.netlify.app/" target="_blank">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                  
+    <button class="btn" id="mobileMenuBtn" style="display: none;" aria-label="Abrir menu">
+        <i class="bi bi-list"></i>
+    </button>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <main class="sm sm-scape md mdpt md-scape large l-scape x-large x-scape xx-large">
+        <div class="lateral" id="sidebar">
+            <img class="#banner" src="./src/public/assets/img/1080x1080/logo1.jpg">
+            <h2 class="t3-smpt t3-sm t3-mdpt t3-md t3l-pt t3l-scape t3">YALE <br>DESIGNER</h2>
+            <nav id="menuL">
+                <p class="py1"><img class="l1" src="./src/public/assets/img/icons/home.svg"><a
+                        class="a-smpt a-sm a-mdpt a-md al-pt al-scape" href="#div1">HOME</a></p>
+                <p class="py1"><img class="l1" src="./src/public/assets/img/icons/user.svg"><a
+                        class="a-smpt a-sm a-mdpt a-md al-pt al-scape" href="#div7">SOBRE</a></p>
+                <p class="py1"><img class="l1" src="./src/public/assets/img/icons/projetos.svg"><a
+                        class="a-smpt a-sm a-mdpt a-md al-pt al-scape" href="#div2">PORTIFÓLIO</a></p>
+                <p class="py1"><img class="l1" src="./src/public/assets/img/icons/contato.svg"><a
+                        class="a-smpt a-sm a-mdpt a-md al-pt al-scape" href="#div3">CONTATO</a></p>
+                <div class="py1">
+                    <a href="https://www.linkedin.com/in/yale-souza/" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Yeil-sr" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yale_designer/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
                 </div>
-                
-                <button class="arrow-right">
-                    <span class="material-symbols-outlined">&gt;</span>
-                </button>
+            </nav>
+        </div>
+        <header id="banner">
+            <div class="banner-overlay"></div>
+            <img src="./src/public/assets/img/background/bg.png" alt="Background" class="banner-bg">
+            <div class="floating-badge badge-left">
+                <div class="f-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="f-text">
+                    <span>Desenvolvimento</span>
+                    <strong>Web & Mobile</strong>
+                </div>
+            </div>
+            <div class="floating-badge badge-right">
+                <div class="f-icon">
+                    <i class="bi bi-palette"></i>
+                </div>
+                <div class="f-text">
+                    <span>UI/UX Design</span>
+                    <strong>Interfaces Vivas</strong>
+                </div>
+            </div>
+
+            <div class="banner-content">
+                <div class="banner-text">
+                    <div class="banner-highlight">
+                        <p class="banner-tag">ATIVE SUA PRESENÇA ONLINE</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="div1" class="process-section">
+            <div class="process-container">
+                <h2 class="process-title">O Processo de Criação que Levará Seu Projeto a Novos Níveis</h2>
+                <p class="process-subtitle">Da ideia inicial ao lançamento, cada etapa é cuidadosamente planejada para
+                    garantir excelência e resultados</p>
+                <div class="process-steps">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z" />
+                                <path
+                                    d="M4 7a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm1-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3>1. Planejamento & Estratégia</h3>
+                            <p>Análise detalhada do projeto, definição de objetivos, personas, arquitetura da informação
+                                e cronograma.</p>
+                        </div>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5z" />
+                                <path
+                                    d="M3.5 4.5A.5.5 0 0 1 4 4h8a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5zm1 .5v6h7V5z" />
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3>2. Design & Prototipagem</h3>
+                            <p>Criação de wireframes, mockups e protótipos interativos com foco em UI/UX e identidade
+                                visual.</p>
+                        </div>
+                    </div>
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                        </div>
+                        <div class="process-content">
+                            <h3>3. Desenvolvimento</h3>
+                            <p>Codificação com tecnologias modernas, desenvolvimento responsivo, integrações e
+                                funcionalidades dinâmicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-cta">
+                    <a href="#div3" class="btn-process">Iniciar Meu Projeto</a>
+                </div>
             </div>
         </div>
-    </section>
-    
-    <section id="design" class="portfolio-section">
-        <p>Design</p>
-        <section id="space1">
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/infantil.png" alt="Design 1"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/d27.png" alt="Design 2"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/h1.png" alt="Design 3"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/d11.png" alt="Design 4"></span></div>
-        </section>
-    </section>
-    
-    <section id="speed-arts" class="portfolio-section">
-        <p>Speed Arts</p>
-        <section id="space1">
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/gta1.png" alt="Speed Art 1"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/otto.png" alt="Speed Art 2"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/MaiDefinitive.png" alt="Speed Art 3"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/lobo.png" alt="Speed Art 4"></span></div>
-        </section>
-    </section>
-    
-    <section id="logotipos" class="portfolio-section">
-        <p>Logotipos</p>
-        <section id="space1">
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/my.png" alt="Logo 1"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/un.png" alt="Logo 2"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/fg.png" alt="Logo 3"></span></div>
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/nago.png" alt="Logo 4"></span></div>
-        </section>
-    </section>
-    
-    <section id="mobile" class="portfolio-section">
-        <p>Mobile</p>
-        <section id="space4">
-            <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/load.gif" alt="Mobile App"></span></div>
-        </section>
-    </section>
-    
-    <section id="mais">
-        <a class="mais">Mais</a>
-    </section>
+        <div id="div2">
+            <div id="titlte-div2">
+                <h1>Projetos que</h1><span id="subtitle-cta">&nbsp;transformaram negócios</span>
+            </div>
+            <p>Conheça alguns dos nossos projetos mais impactantes e os resultados reais que <br> geramos para empresas
+                de diferentes setores.</p>
+            <nav>
+                <ul>
+                    <li><a href="#website" class="active" data-target="website">Web</a></li>
+                    <li><a href="#design" data-target="design">Design</a></li>
+                    <li><a href="#speed-arts" data-target="speed-arts">Speed Arts</a></li>
+                    <li><a href="#logotipos" data-target="logotipos">Logotipos</a></li>
+                    <li><a href="#mobile" data-target="mobile">Mobile</a></li>
+                </ul>
+            </nav>
+            <section id="website" class="portfolio-section active">
+                <div class="projects-container">
+                    <div class="projects-content" id="projects">
+                        <button class="arrow-left" aria-label="Projetos anteriores">
+                            <span class="material-symbols-outlined"> &lt;</span>
+                        </button>
+                        <div class="projects-slider">
+                            <!-- Logistics Xpress -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto07.png" alt="Logistics Xpress">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Logistics Xpress</h6>
+                                        <small>2026</small>
+                                    </div>
+                                    <div class="project-role">Logística</div>
+                                    <p class="project-description">Gestão logística estratégica que garante entregas
+                                        ágeis e seguras.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Vue.js</span>
+                                        <span class="project-tag">Node.js</span>
+                                        <span class="project-tag">PostgreSQL</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://logistics-xpress.vercel.app/" target="_blank"
+                                            rel="noopener noreferrer">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Projeto Moda Íntima -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto06.png" alt="Moda Íntima">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Moda Íntima</h6>
+                                        <small>2026</small>
+                                    </div>
+                                    <div class="project-role">E-commerce</div>
+                                    <p class="project-description">E-commerce de moda íntima que destaca produtos e gera
+                                        confiança na compra.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">React</span>
+                                        <span class="project-tag">Node.js</span>
+                                        <span class="project-tag">MongoDB</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://modaintima.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Projeto Moxxie Studios -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto04.png" alt="Moxxie Studios">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Moxxie Studios</h6>
+                                        <small>2024</small>
+                                    </div>
+                                    <div class="project-role">Fotografia</div>
+                                    <p class="project-description">Portfólio fotográfico que transforma imagens em
+                                        narrativas visuais.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">React</span>
+                                        <span class="project-tag">TypeScript</span>
+                                        <span class="project-tag">CSS</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://moxxiestudios-yeil-srs-projects.vercel.app/" target="_blank"
+                                            rel="noopener noreferrer">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
 
-    <!-- SLIDE MODAL -->
-    <div id="slide">
-        <span id="close">&times;</span>
-        <img class="foto foto1" src="./src/public/assets/img/1080x1080/infantil.png" alt="Design 1">
-        <img class="foto foto2" src="./src/public/assets/img/1080x1080/d27.png" alt="Design 2">
-        <img class="foto foto3" src="./src/public/assets/img/1080x1080/h1.png" alt="Design 3">
-        <img class="foto foto4" src="./src/public/assets/img/1080x1080/d11.png" alt="Design 4">
-        <img class="foto foto5" src="./src/public/assets/img/design/gta1.png" alt="Speed Art 1">
+                            <!-- Projeto Crochê Charm -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto03.png" alt="Crochê Charm">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Crochê Charm</h6>
+                                        <small>2024</small>
+                                    </div>
+                                    <div class="project-role">E-commerce</div>
+                                    <p class="project-description">E-commerce de crochê artesanal com catálogo atraente
+                                        e checkout simples.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">React</span>
+                                        <span class="project-tag">Node.js</span>
+                                        <span class="project-tag">MongoDB</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://ecommerce-croche-frontend.vercel.app/" target="_blank"
+                                            rel="noopener noreferrer">Ver
+                                            Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
 
-        <div class="slider-control">
-            <span class="prev"> &lt;</span>
-            <span class="next">&gt;</span>
+                            <!-- Projeto Barber Shop -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto0.png" alt="Barber Shop">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Barber Shop</h6>
+                                        <small>2024</small>
+                                    </div>
+                                    <div class="project-role">Barbearia</div>
+                                    <p class="project-description">Site para barbearia com foco em identidade de marca e
+                                        agendamento prático.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">React</span>
+                                        <span class="project-tag">Spring Boot</span>
+                                        <span class="project-tag">PostgreSQL</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://barbershop-git-main-yeil-srs-projects.vercel.app/"
+                                            target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projeto Cupcake - Landing Page -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="./src/public/assets/img/projetos/projeto05.png"
+                                        alt="Cupcake Landing Page">
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-title">
+                                        <h6>Cupcake</h6>
+                                        <small>2024</small>
+                                    </div>
+                                    <div class="project-role">Confeitaria</div>
+                                    <p class="project-description">Landing page para confeitaria com design apetitoso e
+                                        foco em conversão.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">HTML</span>
+                                        <span class="project-tag">JavaScript</span>
+                                        <span class="project-tag">CSS</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://cupcake-tia-bia.netlify.app/" target="_blank"
+                                            rel="noopener noreferrer">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="arrow-right" aria-label="Próximos projetos">
+                            <span class="material-symbols-outlined">&gt;</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="design" class="portfolio-section">
+                <p>Design</p>
+                <section id="space1">
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/infantil.png"
+                                alt="Design 1"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/d27.png"
+                                alt="Design 2"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/h1.png"
+                                alt="Design 3"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/d11.png"
+                                alt="Design 4"></span></div>
+                </section>
+            </section>
+            <section id="speed-arts" class="portfolio-section">
+                <p>Speed Arts</p>
+                <section id="space1">
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/gta1.png"
+                                alt="Speed Art 1"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/otto.png"
+                                alt="Speed Art 2"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/MaiDefinitive.png"
+                                alt="Speed Art 3"></span></div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/lobo.png"
+                                alt="Speed Art 4"></span></div>
+                </section>
+            </section>
+            <section id="logotipos" class="portfolio-section">
+                <p>Logotipos</p>
+                <section id="space1">
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/my.png" alt="Logo 1"></span>
+                    </div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/un.png" alt="Logo 2"></span>
+                    </div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/fg.png" alt="Logo 3"></span>
+                    </div>
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/design/nago.png"
+                                alt="Logo 4"></span></div>
+                </section>
+            </section>
+            <section id="mobile" class="portfolio-section">
+                <p>Mobile</p>
+                <section id="space4">
+                    <div id="p2"><span><img class="ft" src="./src/public/assets/img/1080x1080/load.gif"
+                                alt="Mobile App"></span></div>
+                </section>
+            </section>
+            <section id="mais">
+                <a class="mais">Mais</a>
+            </section>
+            <!-- SLIDE MODAL -->
+            <div id="slide">
+                <span id="close">&times;</span>
+                <img class="foto foto1" src="./src/public/assets/img/1080x1080/infantil.png" alt="Design 1">
+                <img class="foto foto2" src="./src/public/assets/img/1080x1080/d27.png" alt="Design 2">
+                <img class="foto foto3" src="./src/public/assets/img/1080x1080/h1.png" alt="Design 3">
+                <img class="foto foto4" src="./src/public/assets/img/1080x1080/d11.png" alt="Design 4">
+                <img class="foto foto5" src="./src/public/assets/img/design/gta1.png" alt="Speed Art 1">
+
+                <div class="slider-control">
+                    <span class="prev"> &lt;</span>
+                    <span class="next">&gt;</span>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    <div id="div4">
-    <div class="loja-virtual-content">
-    <div class="loja-texto">
-      <h2>Comece a vender pela internet!</h2>
-      <h3>Criação de Loja Virtual Completa</h3>
-      <p>Desenvolvemos sua Loja Virtual completa, personalizada e sob medida para sua empresa.</p>
-      <p>Nossa Loja Virtual possui um design sofisticado, simples e intuitivo para seus clientes realizarem as compras.</p>
-      
-      <ul class="loja-beneficios">
-        <li>
-          <div class="beneficio-item">
-            <span class="checkmark">✓</span>
-            <span class="beneficio-texto">Checkout transparente</span>
-          </div>
-        </li>
-        <li>
-          <div class="beneficio-item">
-            <span class="checkmark">✓</span>
-            <span class="beneficio-texto">Sem limites de produtos</span>
-          </div>
-        </li>
-        <li>
-          <div class="beneficio-item">
-            <span class="checkmark">✓</span>
-            <span class="beneficio-texto">Formas de entrega</span>
-          </div>
-        </li>
-        <li>
-          <div class="beneficio-item">
-            <span class="checkmark">✓</span>
-            <span class="beneficio-texto">Controle de estoque</span>
-          </div>
-        </li>
-        <li>
-          <div class="beneficio-item">
-            <span class="checkmark">✓</span>
-            <span class="beneficio-texto">Integrações e muito mais!</span>
-          </div>
-        </li>
-      </ul>
-      
-      <a href="#" class="btn-saiba-mais">Saiba Mais →</a>
-    </div>
-    
-    <div class="loja-imagem">
-      <img src="./src/public/assets/img/Ecommerce web page-pana.png" style="width: 105%;" alt="Exemplo de Loja Virtual">
-    </div>
-  </div>
-    </div>
-    <div id="div3">
-      <div class="envio">
-        <img src="./src/public/assets/img/1080x1080/envio.png" alt="envio">
-      </div>
-      <div class="contato">
-        <h2>Entre em contato</h2>
-        <p class="py2">
-            <a class="zap"><img id="zap" src="./src/public/assets/img/icons/zap.svg" alt="zap"></a>
-            <a href="https://wa.me/+5527999661081" class="pc1" id="contact-phone">(27) 99966-1081</a>
-        </p>
-        <p class="py2">
-            <a class="zap" id="email"><img id="zap" src="./src/public/assets/img/icons/mail.svg" alt="zap"></a>
-            <a class="pc2" id="contact-email">yale.designers@gmail.com</a>
-        </p>
-        <p class="py2">
-            <a class="zap"><img id="zap" src="./src/public/assets/img/icons/insta.svg" alt="zap"></a>
-            <a class="pc3" id="contact-instagram"> @yale_designer</a>
-        </p>
-      </div>
-    </div>
-    
-    <footer>
-      <small> &copy;copyright2026 Todos os direitos reservados.<p>Yale Designer</p></small>
-    </footer>
-  </main>
-<script type="module" src="./src/public/assets/scripts/main.js" defer></script>
+        <section id="div7" class="about-section">
+            <div class="about-container">
+                <!-- Coluna da Imagem com Badge -->
+                <div class="about-image-wrapper">
+                    <img src="./src/public/assets/img/background/A3 (2).png"
+                        alt="Yale Souza - Desenvolvedor e Web Designer" class="about-image">
+                    <!-- Badge de Métricas -->
+                    <div class="about-badge">
+                        <div class="badge-item">
+                            <div class="badge-number">300+</div>
+                            <div class="badge-label">Clientes</div>
+                        </div>
+                        <div class="badge-item">
+                            <div class="badge-number">5.0</div>
+                            <div class="badge-label">Google ★</div>
+                        </div>
+                        <div class="badge-item">
+                            <div class="badge-number">4+</div>
+                            <div class="badge-label">Anos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">
+                        Conheça <span class="accent-name">Yale Souza</span>
+                    </h2>
+
+                    <p class="about-lead">
+                        Há mais de 4 anos transformando ideias em produtos digitais de alta performance.
+                    </p>
+
+                    <div class="about-text-content">
+                        <p>
+                            Minha jornada começou como <strong>desenvolvedor front-end</strong> e evoluiu para uma visão
+                            completa:
+                            <strong class="highlight-text">código, design, SEO e conversão</strong> — tudo integrado
+                            para entregar resultados reais.
+                        </p>
+                        <p>
+                            Não sou apenas um "fazedor de sites". Sou um <strong>parceiro estratégico</strong> que
+                            entende que cada pixel,
+                            cada linha de código e cada decisão de UX impacta diretamente no seu faturamento.
+                        </p>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">WordPress</span>
+                    </div>
+                    <!-- CTA -->
+                    <a href="#div6" class="btn-about-cta">
+                        Vamos Conversar Sobre Seu Projeto
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="div4" class="services-section">
+            <div class="services-slider" role="region" aria-label="Serviços - carousel">
+                <button class="slider-arrow prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="slides-wrapper">
+                    <!-- Slide 1: Landing Page -->
+                    <article class="slide active" data-slide="1" role="group"
+                        aria-label="Slide 1: Landing Page Profissional">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2>CRIAÇÃO DE LANDING PAGE PROFISSIONAL</h2>
+                                <h3>COMECE A CONVERTER NA INTERNET!</h3>
+                                <p>Páginas de alta conversão desenhadas para transformar visitantes em clientes reais.
+                                    Foco total em performance e design persuasivo.</p>
+                                <div class="service-bullets">
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i> &nbsp;&nbsp;Estrutura focada em
+                                        conversão</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Copy persuasiva e
+                                        objetiva</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; CTA estratégico</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Design responsivo e
+                                        mobile-first</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Performance,
+                                        velocidade e escalabilidade</p>
+                                </div>
+                                <a href="#div6" class="btn-service-cta">Saiba mais</a>
+                            </div>
+                            <div class="slide-image">
+                                <div class="blob-shape"></div>
+                                <img src="./src/public/assets/img/servico2.png" alt="Ilustração Landing Page"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Slide 2: E-commerce -->
+                    <article class="slide" data-slide="2" role="group" aria-label="Slide 2: Loja Virtual Completa">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2>CRIAÇÃO DE LOJA VIRTUAL COMPLETA</h2>
+                                <h3>VENDA PARA TODO O MUNDO 24/7</h3>
+                                <p>Desenvolvemos sua Loja Virtual completa, personalizada e sob medida para sua empresa.
+                                    Design sofisticado, simples e intuitivo para seus clientes realizarem as compras.
+                                </p>
+                                <div class="service-bullets">
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Checkout
+                                        transparente e seguro</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Sem limites de
+                                        produtos</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Formas de entrega
+                                        configuráveis</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Controle de estoque
+                                        em tempo real</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Integrações com
+                                        marketplaces</p>
+                                </div>
+                                <a href="#div6" class="btn-service-cta">Ver planos</a>
+                            </div>
+                            <div class="slide-image">
+                                <div class="blob-shape blue"></div>
+                                <img src="./src/public/assets/img/servico1.png" alt="Ilustração Loja Virtual"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Slide 3: Site Institucional -->
+                    <article class="slide" data-slide="3" role="group"
+                        aria-label="Slide 3: Site Institucional Profissional">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2>SITE INSTITUCIONAL PROFISSIONAL</h2>
+                                <h3>CONSTRUA AUTORIDADE ONLINE</h3>
+                                <p>Desenvolvemos sites institucionais sob medida para comunicar propósito, valores e
+                                    serviços com clareza, unindo design estratégico, usabilidade e SEO para fortalecer a
+                                    autoridade da marca.</p>
+                                <div class="service-bullets">
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Design corporativo e
+                                        identidade consistente</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Conteúdo claro para
+                                        autoridade e confiança</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Navegação simples e
+                                        intuitiva</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; SEO e performance
+                                        mobile-first</p>
+                                    <p><i class="bi bi-check-circle text-primary me-2"
+                                            style="color:#2bb0ff; font-size: 18px"></i>&nbsp;&nbsp; Formulários e
+                                        integrações essenciais</p>
+                                </div>
+                                <a href="#div6" class="btn-service-cta">Solicitar proposta</a>
+                            </div>
+                            <div class="slide-image">
+                                <div class="blob-shape purple"></div>
+                                <img src="./src/public/assets/img/servico3.png" alt="Ilustração Site Institucional"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="slider-arrow next" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+                <div class="slider-dots" role="tablist" aria-label="Navegação de slides">
+                    <button role="tab" aria-selected="true" class="dot active" aria-label="Ir para slide 1"></button>
+                    <button role="tab" aria-selected="false" class="dot" aria-label="Ir para slide 2"></button>
+                    <button role="tab" aria-selected="false" class="dot" aria-label="Ir para slide 3"></button>
+                </div>
+            </div>
+        </section>
+        <section id="div6" class="plans-section" aria-label="Planos e Pacotes">
+            <div class="plans-container">
+                <div class="plans-header">
+                    <h2 class="plans-title">Planos & Pacotes</h2>
+                    <p class="plans-subtitle">Escolha o modelo ideal para seu negócio</p>
+                    <div class="plans-tags" aria-hidden="true">
+                        <!-- pequenas tags informativas -->
+                        <span class="tag">Suporte</span>
+                        <span class="tag">Conversão</span>
+                        <span class="tag">Performance</span>
+                        <span class="tag">Segurança</span>
+                        <span class="tag">Mobile-first</span>
+                    </div>
+                </div>
+                <div class="plans-cards-wrapper" role="list" aria-label="Compare nossos planos">
+                    <!-- Card 1 -->
+                    <article class="plan-card plan-express" role="listitem" aria-labelledby="plan-express-title">
+                        <div class="plan-inner">
+                            <h3 id="plan-express-title">Site Express</h3>
+                            <p class="plans-subtitle">Focado em conversão imediata.</p>
+                            <div class="plan-price"><small>A PARTIR DE:</small><strong>R$ 599,00</strong>
+                                <div class="line-card"></div>
+                            </div>
+                            <p class="plan-brief">Ideal para: marcar presença online rápido, com custo enxuto e
+                                resultado imediato.</p>
+                            <div class="plan-features">
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>1 página (landing) até 6 seções</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Copywriting estratégico</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Integrações essenciais</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Suporte pós-lançamento</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>5 a 10 dias úteis</p>
+                            </div>
+                            <button class="plan-cta">Quero um Site Express</button>
+                        </div>
+                    </article>
+                   <!-- Card 2 (recomendado) -->
+                    <article class="plan-card plan-professional recommended" role="listitem"
+                        aria-labelledby="plan-prof-title">
+                        <div class="badge">Recomendado</div>
+                        <div class="plan-inner">
+                            <h3 id="plan-prof-title">Professional</h3>
+                            <p class="plans-subtitle">Focado em autoridade de marca.</p>
+                            <div class="plan-price"><small>A PARTIR DE:</small><strong>R$ 899,90</strong>
+                                <div class="line-card-recommended"></div>
+                            </div>
+                            <p class="plan-brief-recommended">Ideal para: Empresas consolidadas que precisam de um site
+                                completo e robusto.</p>
+                            <div class="plan-features">
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Site institucional multi-página</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>SEO avançado</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Blog Integrado</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Analytics & Pixel</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>15 a 30 dias</p>
+                            </div>
+                            <button class="plan-cta-recommended">Quero meu portfólio</button>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="plan-card plan-premium" role="listitem" aria-labelledby="plan-prem-title">
+                        <div class="plan-inner">
+                            <h3 id="plan-prem-title">Premium</h3>
+                            <p class="plans-subtitle">Personalização de ponta a ponta.</p>
+                            <div class="plan-price"><small>A PARTIR DE:</small><strong>R$ 1.199,99</strong>
+                                <div class="line-card"></div>
+                            </div>
+                            <p class="plan-brief">Ideal para: Lojas virtuais, plataformas de membros e aplicativos sob
+                                medida.</p>
+                            <div class="plan-features">
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>E-commerce / Web App</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>UI/UX exclusivo</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Integrações de pagamento</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Painel de Gestão</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>Consultoria de escalabilidade</p>
+                                <p><i class="bi bi-check-circle text-primary me-2"
+                                        style="color:#2bb0ff; font-size: 18px"></i>15 a 30 dias úteis</p>
+                            </div>
+                            <button class="plan-cta">Solicitar proposta</button>
+                        </div>
+                    </article>
+                </div>
+                <p class="plans-note">Todos os projetos incluem suporte pós-lançamento. O Express tem escopo fechado.
+                </p>
+                <div class="plans-action">
+                    <a class="btn-main" href="#contact">Ative sua presença online</a>
+                </div>
+            </div>
+        </section>
+        <section id="div5" class="faq-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="section-title mb-3">Perguntas Frequentes</h2>
+                        <p class="section-subtitle">Tire suas dúvidas sobre desenvolvimento web, design e meus serviços
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="true">
+                                        Qual é o prazo médio para desenvolvimento de um site?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        O prazo varia conforme a complexidade do projeto. Landing pages podem ficar
+                                        prontas em 5-10 dias, sites institucionais em 15-30 dias, e e-commerces ou
+                                        sistemas mais complexos em 30-60 dias. Trabalho com sprints semanais e entrego
+                                        por fases para que você acompanhe a evolução do projeto.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Você oferece suporte após a entrega do projeto?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sim! Ofereço 30 dias de suporte gratuito para ajustes necessários após a
+                                        entrega. Após esse período, disponibilizo planos de manutenção mensal que
+                                        incluem atualizações de segurança, backup, correções e pequenas alterações de
+                                        conteúdo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Quais formas de pagamento são aceitas?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Aceito PIX, transferência bancária, cartão de crédito (até 12x) e boleto. Para
+                                        projetos maiores, trabalho com parcelamento em até 3x sem juros no cartão ou
+                                        divido o pagamento em etapas (30% para iniciar, 40% na aprovação do layout e 30%
+                                        na entrega final).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Meu site vai funcionar bem em dispositivos móveis?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Absolutamente! Todos os meus projetos são desenvolvidos com design responsivo
+                                        (mobile-first), garantindo que seu site tenha performance e experiência
+                                        otimizadas em smartphones, tablets e desktops. Testo em diversos dispositivos e
+                                        navegadores para garantir compatibilidade total.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        Posso atualizar o conteúdo do site sozinho?
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sim! Para sites que requerem atualizações frequentes, desenvolvo usando CMS
+                                        (WordPress) ou interfaces administrativas personalizadas que permitem que você
+                                        gerencie conteúdos, produtos, imagens e textos de forma intuitiva, sem precisar
+                                        de conhecimento técnico.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="div3" role="region" aria-labelledby="contact-title">
+            <div class="contact-container">
+                <div class="contact-main-grid">
+                    <!-- Coluna 1: Conteúdo e Ações -->
+                    <div class="contact-content">
+                        <h2 id="contact-title" class="contact-heading">
+                            Quer um design que <span class="highlight">converte</span>? <br>Me chame
+                        </h2>
+
+                        <nav class="contact-buttons-list" role="navigation" aria-label="Links de contato">
+                            <a href="https://wa.me/5527999661081" class="contact-btn secondary" role="button"
+                                aria-label="Chamar no WhatsApp">
+                                <img src="./src/public/assets/img/icons/zap.png"
+                                    style="width: 36px; margin-right: 15px;" alt="Ícone WhatsApp">
+                                WhatsApp
+                            </a>
+                            <a href="https://instagram.com/yaledesigner" class="contact-btn secondary" role="button"
+                                aria-label="Seguir no Instagram">
+                                <span class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c.796 0 1.441.645 1.441 1.44s-.645 1.44-1.441 1.44c-.795 0-1.44-.645-1.44-1.44s.645-1.44 1.44-1.44z" />
+                                    </svg>
+                                </span>
+                                Instagram
+                            </a>
+                            <a href="mailto:yale.designers@gmail.com" class="contact-btn secondary" role="button"
+                                aria-label="Enviar E-mail">
+                                <span class="icon-wrapper">
+                                    <svg height="200px" width="200px" version="1.1" id="_x32_"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff" stroke="#ffffff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g>
+                                                <path class="st0"
+                                                    d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281 0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg> </span>
+                                E-mail
+                            </a>
+                        </nav>
+                        <div class="cta-wrapper">
+                            <a href="#!" class="contact-btn primary main-cta" role="button">
+                                Solicitar orçamento
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Coluna 2: Ilustração -->
+                    <div class="contact-visual">
+                        <img src="./src/public/assets/img/1080x1080/envio1.png"
+                            alt="Ilustração de avião de papel saindo de um celular" class="contact-illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <!-- Redes Sociais -->
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/yale-souza/" target="_blank" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Yeil-sr" target="_blank" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/yale_designer/" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Informações de contato compactas -->
+                    <div class="footer-contact">
+                        yale.designers@gmail.com | +55 (27) 99966-1081
+                    </div>
+                    <!-- Copyright compacto -->
+                    <div class="footer-copyright">
+                        <small>&copy; Copyright 2026</small>
+                        <p>YALE DESIGNER</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="./src/public/assets/scripts/services-slider.js" defer></script>
+    <script type="module" src="./src/public/assets/scripts/main.js" defer></script>
 </body>
 </html>

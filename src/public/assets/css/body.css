@@ -3,26 +3,49 @@ body{
     padding: 0 auto;
     box-sizing: border-box;
 }
-
 main{
    display: grid;
    background-image: url('/src/public/assets/img/background/fundo.png') ; 
    background-size: cover;
    background-repeat: no-repeat;
    grid-template-columns:  repeat(6, 1fr);   
-   grid-template-rows: 715px 600px 1000px auto 500px 60px;
+   grid-template-rows: auto auto auto auto auto auto auto auto 150px; 
    overflow-x: hidden;  
    grid-template-areas:
-
    "s c c c c c"
    "s i i i i i"
-   "s f f f f f"
    "s d d d d d"
+   "s f f f f f"
+   "s a a a a a"
+   "s pp pp pp pp pp"
+   "s p p p p p"
    "s e e e e e"
-   "s r r r r r "
-;
+   "s r r r r r";
 }
-
-#div3, footer{
+#div3{
     display: flex;
+}
+@media screen and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        padding-top: 70px; 
+    }
+    #banner, #div1, #div2, #div3, #div4, #div5, #div6, #div7, footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0 !important;
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+    footer {
+        padding: 20px 15px !important;
+        min-height: 150px !important;
+    }
 }

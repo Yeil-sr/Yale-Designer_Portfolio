@@ -1,0 +1,347 @@
+#div7.about-section {
+    width: 95.3%;
+    grid-area: a;
+    padding: 50px 20px;
+    background-image: linear-gradient(to bottom, #dfeaff, #f4f6fa, #f4f6fa, #dfeaff, #dfeaff, #f4f6fa);
+    position: relative;
+    overflow: hidden;
+}
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 60px;
+}
+.about-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 25px 50px -12px rgb(0 0 0 / 0.25),
+        0 8px 24px rgb(0 102 255 / 0.15);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: all 0.5s ease;
+    border: 1px solid rgb(0 102 255 / 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.about-image-wrapper:hover {
+    transform: perspective(1000px) rotateY(0deg) scale(1.01);
+    box-shadow:
+        0 30px 60px -12px rgb(0 0 0 / 0.3),
+        0 12px 36px rgb(0 102 255 / 0.2);
+}
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    flex-grow: 1;
+}
+.about-badge {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(255 255 255 / 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px 30px;
+    display: flex;
+    gap: 40px;
+    box-shadow:
+        0 10px 30px rgb(0 0 0 / 0.15),
+        0 4px 12px rgb(0 102 255 / 0.1);
+    border: 1px solid rgb(0 102 255 / 0.15);
+    z-index: 2;
+}
+.badge-item {
+    text-align: center;
+    flex: 1;
+}
+.badge-number {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #06f;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+.badge-label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+.about-content {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #111;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+.accent-name {
+    background: linear-gradient(90deg, #0066ff, #2bb0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff0;
+    background-clip: text;
+}
+.about-lead {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #06f;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+}
+.about-text-content {
+    margin: 0 0 10px 0;
+}
+.about-text-content p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.highlight-text {
+    color: #06f;
+    font-weight: 600;
+}
+.about-metrics {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+}
+.metric-item {
+    display: flex;
+    gap: 15px;
+}
+.metric-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0066ff, #2bb0ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.metric-icon svg {
+    color: #fff;
+    width: 18px;
+    height: 18px;
+}
+.metric-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+.metric-text strong {
+    color: #06f;
+    font-weight: 600;
+}
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 3rem;
+}
+.tech-tag {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    background: rgb(0 0 0 / 0.05);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease;
+}
+.tech-tag:hover {
+    background: rgb(0 102 255 / 0.1);
+    color: #06f;
+    border-color: rgb(0 102 255 / 0.2);
+}
+.btn-about-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #0066ff, #2bb0ff);
+    color: #fff;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgb(0 102 255 / 0.3);
+    text-align: center;
+    margin-top: auto;
+}
+.btn-about-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgb(0 102 255 / 0.4);
+    background: linear-gradient(90deg, #0052d4, #1a9fff);
+    color: #fff;
+}
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+        justify-content: flex-start;
+    }
+    .about-image-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        transform: none;
+        height: 500px;
+    }
+    .about-image {
+        height: 500px;
+    }
+    .about-image-wrapper:hover {
+        transform: scale(1.01);
+    }
+    .about-title {
+        font-size: 2.5rem;
+    }
+    .about-lead {
+        font-size: 1.2rem;
+    }
+    .metric-item {
+        justify-content: center;
+    }
+    .tech-tags {
+        justify-content: center;
+    }
+    .about-badge {
+        padding: 15px 20px;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%;
+        justify-content: space-around;
+        bottom: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .badge-item {
+        flex: 0 0 auto;
+        min-width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .badge-number {
+        font-size: 2rem;
+    }
+    .btn-about-cta {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #div7.about-section {
+        padding: 80px 15px;
+    }
+    .about-title {
+        font-size: 2rem;
+    }
+    .about-lead {
+        font-size: 1.1rem;
+    }
+    .about-text-content p {
+        font-size: 1rem;
+    }
+    .metric-text {
+        font-size: 1rem;
+    }
+    .about-badge {
+        flex-direction: row;
+        gap: 15px;
+        padding: 12px 15px;
+        width: 95%;
+    }
+    .badge-item {
+        min-width: 70px;
+    }
+    .badge-number {
+        font-size: 1.8rem;
+    }
+    .badge-label {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+    .about-badge {
+        width: 95%;
+        padding: 10px 12px;
+        gap: 10px;
+    }
+    .badge-item {
+        min-width: 60px;
+    }
+    .badge-number {
+        font-size: 1.6rem;
+    }
+    .badge-label {
+        font-size: 0.8rem;
+    }
+    .btn-about-cta {
+        padding: 15px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .tech-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    .about-badge {
+        width: 80%;
+        padding: 12px 20px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .about-badge {
+        gap: 8px;
+        padding: 8px 10px;
+    }
+    .badge-item {
+        min-width: 55px;
+    }
+    .badge-number {
+        font-size: 1.4rem;
+    }
+    .badge-label {
+        font-size: 0.75rem;
+    }
+}

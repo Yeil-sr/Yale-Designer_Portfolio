@@ -1,10 +1,15 @@
 @import 'variáveis.css';
 @import 'body.css';
+@import 'animations.css'; 
 @import 'header.css';
 @import 'lateral.css';
 @import 'div1.css';
 @import 'div2-portslide.css';
 @import 'div3.css';
 @import 'div4.css';
+@import 'div5.css';
+@import 'div6.css';
+@import 'div7.css';
+@import 'footer.css';
 @import 'leiaute.css';
 @import 'media.css';
